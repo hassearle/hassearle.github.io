@@ -1,0 +1,31 @@
+/*add your google webfonts they must be the first lines in your CSS*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:300);
+
+/*define the general banner layout*/
+.banner{
+  width: 300px;
+  height: 250px;
+  border:1px solid rgba(0,0,0,.8);
+}
+
+
+
+/*My own utility styles for cropping, centering, and just prettying this up for class presentation*/
+.crop{
+  overflow: hidden;
+}
+
+*, *:before, *:after {
+	margin: 0; padding: 0;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html,body{
+  height: 100%; width: 100%;
+  display: flex;
+}
+.banner{
+  margin:auto;
+}
