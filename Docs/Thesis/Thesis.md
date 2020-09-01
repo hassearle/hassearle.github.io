@@ -37,14 +37,14 @@ Most residential 3D printers use Fused Deposition Modelling (FDM) technology, me
 
 Their appeal to end-users and small businesses is in their ability to quickly and cheaply produce physical models (also known as “rapid prototyping”) [^6]. While FDM printers are appealing because of their affordability, residential and small businesses implementing 3D printing technology do not usually have enough capital to prioritize cyber-security, thus, leaving systems vulnerable to compromise and subsequent manipulations. Traditional manufacturing quality assurance (QA) equipment designed to test the print in post-production is available but not ordinarily affordable by most FDM printer owners. Further, not only is this QA equipment expensive, but organizations such as NIST [^18] and NASA [^28] have called for new QA techniques to be developed because they cannot reliably detect defects in AM parts. This lack of security poses a significant problem since most 3D printers are residentially owned. This issue can lead to technical data theft (also known as intellectual property, IP theft), sabotage attacks (that can target the manufactured part, 3D printer, or environment), and illegal part manufacturing [^32].  
 
-![_Figure 1_: AM attack analysis framework [^32]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture1.png?raw=true)
+![_Figure 1_: AM attack analysis framework [^32]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture1.png?raw=true)  
 _Figure 1_: AM attack analysis framework [^32]
 
 3D printers can become compromised at various points in the 3D printing process. In _Figure 1_, “attack methods” are semantically identical manipulations introduced by different compromised elements [^32]. Meaning, multiple attacks can have similar effects despite having different compromised elements. For instance, one attack method can compromise slicing software and sabotage the 3D printer by generating a toolpath file with inappropriate printer settings. Another attack method can intercept a file in transit before it reaches the printer, make malicious modifications, then send it to the printer. Another type of attack method can use reverse shells to exchange benign stereolithography (STL) files with malicious ones on the victim’s host computer. Additionally, some attack methods can compromise 3D printer firmware by modifying the printing parameters such that they are beyond the printer’s capabilities [^33]. These attack methods can all result in similar effects but occur at different points of the 3D printing process. This list is not comprehensive; several other consequential types of attacks exist, such as those aimed at stealing intellectual property. However, this paper seeks to address sabotage attacks against AM equipment.
 
 Several categories of actors carry out attacks against AM. Table 1 lists six actors and the areas they impact on conventional manufacturing. However, since this paper focuses on physical systems, we exclude financial theft/fraud, theft of IP or strategic plans, and regulatory. These areas are still important AM aspects but are beyond the scope of this paper. 
  
-![_Table_ 1: Cyber threat actors and impacts: Heat map for the manufacturing sector [^35]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture2.png?raw=true)
+![_Table_ 1: Cyber threat actors and impacts: Heat map for the manufacturing sector [^35]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture2.png?raw=true)  
 _Table_ 1: Cyber threat actors and impacts: Heat map for the manufacturing sector [^35]
 
 3D printer sabotage affects both those inside and outside the AM organization. Additive manufacturing is composed of a diverse group of stakeholders. Owners, managers, purchasers of AM systems, AM print material suppliers, designers, vendors, purchasers, maintainers, and AM product disposers can compose just one AM organization [^35].
@@ -55,7 +55,7 @@ Technological progress, made possible only through AM, has made an impact across
 
 Graves analyzes AM security from several perspectives of security awareness [^10]. Here, Graves explains why we cannot apply the traditional manufacturing (Subtractive Manufacturing, SM) cyber-security approaches to AM. From an exposure to attack awareness perspective, subtle distinctions originate from the differences in the manufacturing environments. Among the environmental factors, AM has a higher exposure to potentially malicious actors, increased potential for fraudulent behavior by participants actors, and less challenging theft due to concentrated technical data. Further, substantial differences exist between AM and SM in manipulations of the attack analysis framework (see _Figure 2_). For example, in sabotage attacks, numerous manipulations can introduce defects unique to an additively manufactured part that could result in sabotage. While in SM, defects that reduce tensile strength or other parameters are limited to external defects for which detection with non-destructive evaluation (NDE) methods is rather trivial. While there is a significant overlap between AM and SM security, numerous aspects of AM are unique and require special considerations.
  
-![_Figure_ 2: Overlap and differences between AM and SM securities [^10]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture3.png?raw=true)
+![_Figure_ 2: Overlap and differences between AM and SM securities [^10]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture3.png?raw=true)  
 _Figure_ 2: Overlap and differences between AM and SM securities [^10]
 
 This thesis proposes a static analysis process to develop test cases on toolpath files used with Fused Deposition Modelling 3D printers to enact a level of security that reduces unnecessary risk for FDM 3D printers. Static analysis, more commonly known in reverse engineering, observes a file’s inner workings before execution to determine if malicious elements are present [^22]. Thus, providing a level of certainty that the file will not sabotage a 3D printer.
@@ -86,7 +86,8 @@ FDM has no role in AM with metals. Instead, the predominating AM processes for c
 
 ## 2.2 3D PRINTING PROCESS
  
-![_Figure_ 3: Additive Manufacturing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture4.png?raw=true)
+![_Figure_ 3: Additive Manufacturing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture4.png?raw=true)  
+_Figure_ 3: Additive Manufacturing process
 
 _Figure_ 3 presents the AM printing process, which consists of five steps to printing a part. First, we create a 3D model with Computer-Aided-Design (CAD) software. Then we convert our model to a Stereolithography (STL) file. Throughout the AM industry, we use STL files to capture all our parts’ geometry. 
 
@@ -96,7 +97,8 @@ Next, we use slicing software to divide our STL file into layers for our 3D prin
 
 In _Figure 4_, Yampolskiy outlines how attacks on or with 3D printers can be performed [^33]. For example, Yampolskiy’s framework can be applied to the dr0wned study to sabotage 3D printed drone propeller blades [^5]. In this case, the phishing email is the “_attack vector,_” the controller PC is the “_compromised element_,” the replaced STL file is the “_manipulation,_” and the propeller breaking in mid-flight is the “_effect_.” The resulting “_goal_” is the destruction of the drone using a “_3D printer as a weapon_” (3D-PaaW).
  
-![_Figure_ 4: Attacks on/with 3D printers [^33]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture5.png?raw=true)
+![_Figure_ 4: Attacks on/with 3D printers [^33]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture5.png?raw=true)  
+_Figure_ 4: Attacks on/with 3D printers [^33]
 
 ## 2.4 PREVIOUS WORKS ON DETECTING SABOTAGE ATTACKS
 
@@ -145,13 +147,15 @@ We developed TSAT to mitigate AM cybersecurity vulnerabilities by adapting Yampo
 3.	Demonstrate that TSAT can be implemented on more than one type of toolpath file. 
 4.	Create testing environments that are easier to use than not use.
  
-![_Figure_ 5: Adapted attack on/with AM framework (based on [^33] )](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture6.png?raw=true)
+![_Figure_ 5: Adapted attack on/with AM framework (based on [^33] )](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture6.png?raw=true)  
+_Figure_ 5: Adapted attack on/with AM framework (based on [^33] )
 
 TSAT is not a software program; rather, it is a process to develop test cases that prevent AM sabotage. The process adapts Yampolskiy’s [^33] framework to emulate attacks on or with 3D printers to develop our test cases. _Figure_ 5 demonstrates how we use the framework to develop test cases. First, we assume that elements of the 3D printing process have already been compromised. Next, we produce defects on behalf of the compromised elements (manipulations). Then, we observe the effects on the toolpath file and write test cases that detect the manipulations.
 
 ## 3.1 TSAT PROCESS
  
-![_Figure_ 6: TSAT process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture7.png?raw=true)
+![_Figure_ 6: TSAT process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture7.png?raw=true)  
+_Figure_ 6: TSAT process
 
 In _Figure_ 6, the TSAT development cycle starts with the “defect-driven testing” phase. In this phase, we discover a new AM threat and recreate that threat in a toolpath file. Here, attacks can be made at any point in the 3D printing process as long as the toolpath file contains the desired defect. Then, we write and execute a test case that detects the malicious defect and observe the results (“red light” test). This stage is known as the “red light” stage of the TSAT process because we must keep returning to this step until we can detect the defect. If the defect is not recognized, we failed our objective and must determine if our test code or our malicious toolpath file is the cause. If our defect is detected, we achieved our objective and can move onto the next step. Next, we execute our test case on a benign toolpath file to demonstrate that our test case passes when the defect is not present in the file. Otherwise, we know our test case does not extract the correct values from the toolpath file and must repeat the previous steps.
 
@@ -167,7 +171,8 @@ TSAT projects apply the (TSAT) process in the development of each test case. TSA
 
 The TSAT process has a nonlinear relationship between a TSAT program and all the steps before printing in the 3D printing process. _Figure_ 7 observes defects we introduce in each of the 3D printing process steps, followed by the remaining path back to the TSAT program. 
  
-![_Figure_ 7: TSAT process in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture8.png?raw=true)
+![_Figure_ 7: TSAT process in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture8.png?raw=true)  
+_Figure_ 7: TSAT process in the 3D printing process
 
 ### 3.1.2 TSAT INDEPENDENCE
 
@@ -204,13 +209,15 @@ Since we already know what file types our printer can accept, we should include 
 
 ### 3.2.1 HIGH-LEVEL DESIGN
  
-![_Figure_ 8: TSAT in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture9.png?raw=true)
+![_Figure_ 8: TSAT in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture9.png?raw=true)  
+_Figure_ 8: TSAT in the 3D printing process
 
 _Figure_ 8 shows how TSAT fits into the 3D printing process. Once the model is made, converted into an STL file, and sliced into G-code, we can begin the TSAT process. The TSAT process begins with importing the G-code file into a Python 3 enabled device. TSAT inspects the G-code and runs tests to determine if the file can be printed on the given 3D printer. 
 
 A TSAT project composition is presented in _Figure_ 9. There are two types of test cases: operator-based and printer-based test cases. Operator-based test cases are configured on a per-print basis by the 3D printer operator. The purpose of these test cases is to validate that the component meets the original design specifications. Printer-based test cases are tailored to the 3D printer’s design capabilities. During the initial TSAT configuration, the 3D printer operator sets variables for these printer-based test cases. Ideally, the configuration file should not change for the lifetime of the printer. Both types of tests help determine potential component defects, accidental or malicious.
  
-![_Figure_ 9: TSAT project composition](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture10.png?raw=true)
+![_Figure_ 9: TSAT project composition](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture10.png?raw=true)  
+_Figure_ 9: TSAT project composition
 
 ### 3.2.2 OBJECTIVE #1: TEST CASES
 
@@ -243,15 +250,18 @@ The easier to write TSAT test cases, the more likely developers will develop add
 ### 3.3.1 UNDERSTANDING G-CODE
 G-code is essentially a list of X, Y, and Z-axis instructions that guide the print head to every print point. The G-code also describes how the printer should manufacture the part. G-code supplies the printer with settings such as how hot to heat the filament, or how fast the print head should move when traveling between points.
  
-![_Figure_ 10: An example of the main body in G-Code [^8]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture11.png?raw=true)
+![_Figure_ 10: An example of the main body in G-Code [^8]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture11.png?raw=true)  
+_Figure_ 10: An example of the main body in G-Code [^8]
  
-![_Figure_ 11: Individual g-code line composition](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture12.png?raw=true)
+![_Figure_ 11: Individual g-code line composition](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture12.png?raw=true)  
+_Figure_ 11: Individual g-code line composition
 
 _Figure_ 10 illustrates several ways the G-code configures 3D printer settings. The G-code implements these settings in two ways: callsigns and implied. Callsigns are provided at the beginning of each non-commented line (_Figure_ 11). Callsigns describe the objective of each line of instructions. In _Figure_ 10, the first non-commented line (comment lines begin with a semicolon) is “M107,” its purpose is to turn off the fan. 
 
 Some codes, such as `M107`, do not have any parameters. Other callsigns, such. as `G0`, have parameters that affect how the code is carried out by the printer. “G0” is the callsign to move the print head to a location without extruding any filament. _Figure_ 12 depicts a mock G-code file where each line represents the only command for that layer. We observe that the last parameter in all the lines sets the layer height. We can also tell that the layer height is the sum of all the previous layer heights plus the proceeding layer’s height. We cannot assume that the layer thickness is equal to the first layer’s height because the first layer’s height can be set to a different amount. Therefore, since there is no callsign for setting the layer’s thickness, the layer height is implied whenever repositioning the printer head with the Z-axis parameter. If we wanted to find the layer thickness (in _Figure_ 12’s case, it is 0.03), we would have to take a layer height value and subtract the previous layer height value (as long as the previous Z-axis value is not the first layer height).
  
-![_Figure_ 12: Mock layer height g-code](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture13.png?raw=true)
+![_Figure_ 12: Mock layer height g-code](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture13.png?raw=true)  
+_Figure_ 12: Mock layer height g-code
 
 G-code provides all the information the printer needs to manufacture a component. Essentially, G-code is a road map. It provides the printer with a list of line-by-line instructions so that the print head can navigate the print area. These instructions are a legitimate sequence of instructions that operates the printer within allowable (and presumably safe) bounds. 
 
@@ -273,7 +283,8 @@ Infill layers are a case where G-code lines can challenge understandability. It 
 Instead of devising an algorithm to detect and assess infill toolpath from G-code instructions, we elected an indirect approach that relies on a convention of annotating G-code instructions that carry out infills. In short, we searched comments for text such as “infill” to identify our desired values. 
 
 ### 3.3.5 CHALLENGE 4: G-CODE VS. CMB
-![_Figure_ 13: Stratasys CMB File Raw Hex Data [^13]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture14.png?raw=true)
+![_Figure_ 13: Stratasys CMB File Raw Hex Data [^13]](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture14.png?raw=true)  
+_Figure_ 13: Stratasys CMB File Raw Hex Data [^13]
 
 Because G-code was developed to be portable among different machining devices [^14], G-code can be somewhat easy to read for humans. Other 3D printer languages, such as CMB files, were not designed for human consumption. Rather than using text, CMB files store information as binary numbers of varying lengths, but usually in four-byte longs. Raw CMB files become understandable to humans only when viewed in hexadecimal format (_Figure_ 13).
 
@@ -372,7 +383,8 @@ TSAT is a process that, once implemented on an individual 3D printer, can allow 
 
 ### 4.3.1 CAD MODEL FILE
  
-![_Figure_ 14: CAD model attacks in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture16.png?raw=true)
+![_Figure_ 14: CAD model attacks in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture16.png?raw=true)  
+_Figure_ 14: CAD model attacks in the 3D printing process
 
 For AM cyber-attacks, not just sabotage, the CAD model file is the most valuable in terms of information. These files contain all the part’s geometric date. _Figure_ 14 depicts where attacks on CAD model files take place in the 3D printing process.
 
@@ -380,15 +392,17 @@ From an adversarial point of view, at this point in the 3D printing process, we 
 
 _Figure_ 15 depicts the benign CAD model file that we weaponize to sabotage a 3D printer. We begin by opening the benign file in CAD modeling software (in this case, Fusion 360). Next, we use the scaling tool to scale the component 15 times its original size. Our component increases in size from 16 mm (_Figure_ 15) to 245mm (_Figure_ 16). We also use Fusion 360 to export and convert our malicious CAD model file, as well as the original benign file, to STL files. 
  
-![_Figure_ 15: Benign CAD model file (16 mm)](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture17.png?raw=true)
- 
-![_Figure_ 16: Malicious CAD model file (245 mm)](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture18.png?raw=true)
+| Benign | Malicious | 
+| ---: | ---: |
+| ![_Figure_ 15: Benign CAD model file (16 mm)](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture17.png?raw=true) | ![_Figure_ 16: Malicious CAD model file (245 mm)](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture18.png?raw=true) | 
+| _Figure_ 15: Benign CAD model file (16 mm) | _Figure_ 16: Malicious CAD model file (245 mm) |
  
 We next use Slic3r, to slice our STL files to G-code by first indicating that the print bed is twice as large as it is physically (_Figure_ 17). Then, we slice our file and export the G-code (_Figure_ 18). 
- 
-![_Figure_ 17: Print bed configuration](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture19.png?raw=true)
- 
-![_Figure_ 18: STL to G-code](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture20.png?raw=true) 
+
+| Benign | Malicious | 
+| ---: | ---: |
+| ![_Figure_ 17: Print bed configuration](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture19.png?raw=true) | ![_Figure_ 18: STL to G-code](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture20.png?raw=true) |
+| _Figure_ 17: Print bed configuration | _Figure_ 18: STL to G-code | 
 
 Finally, we feed the G-code files into our TSAT program and view the results (see Appendix B.1 and B.2). Our benign file passes all tests, whereas our malicious file fails two tests: “exceeds max X size” and “exceeds max Y size.” The latter file fails because the target printer’s X and Y limits were set in the program before the attack. Therefore, when the G-code values do not meet the program’s printer requirements, the file fails to print.
 
@@ -399,10 +413,11 @@ To manufactures, theft, or loss of these files can be costly. However, because C
 ![_Figure_ 19: STL attacks in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture21.png?raw=true)
 
 Once we convert the model to an STL file, only the data that describe the part’s surface remains. All other information describing the model is lost. This data, once represented by complex mathematical equations, is replaced with triangular planes, called facets. The use of facets makes reverse-engineering the component a challenge, but STL files still contain all the data needed to fabricate the part’s geometry. It is still possible to edit the model by changing the vertices of the facets [^23]. These vertices are how we attack the STL component. _Figure_ 19 shows where attacks on STL files take place in the 3D printing process.  
- 
-![_Figure_ 20: Benign STL file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture22.png?raw=true)
- 
-![_Figure_ 21: Malicious STL file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture23.png?raw=true)
+
+| Benign | Malicious | 
+| ---: | ---: |
+| ![_Figure_ 20: Benign STL file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture22.png?raw=true) | ![_Figure_ 21: Malicious STL file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture23.png?raw=true) |
+| _Figure_ 20: Benign STL file | _Figure_ 21: Malicious STL file |
 
 We previously made our defects in the CAD model stage in the 3D printing process; now, we begin our attack at the STL file stage. We start by opening the STL in Fusion 360 to view the component’s mesh. Our attack uses the same approach as our previous attack on the CAD model. We will use the mesh’s vertices to scale the mesh ten times its original size. _Figures_ 20 and 21 show that the mesh’s length has increased from 22 mm to 225 mm, a distance that exceeds the target printer’s limits. We retain a copy of the original mesh to compare the results when running the files through the TSAT program. 
 
@@ -412,15 +427,17 @@ The results observed in Appendix B.3 and B.4 are as follows: the benign G-code f
 
 ### 4.3.3 TOOLPATH FILE
  
-![_Figure_ 22: Tool file attacks in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture24.png?raw=true)
+![_Figure_ 22: Tool file attacks in the 3D printing process](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture24.png?raw=true)  
+_Figure_ 22: Tool file attacks in the 3D printing process
 
 _Figure_ 22 indicates where toolpath (G-code) file attacks take place. Toolpath files offer the most flexibility in what the attack is trying to accomplish. These files are often seen as less valuable because toolpath files are bound to a specific 3D printer upon creation. However, these files also contain all the printer’s operations, which can be altered. Therefore, our next attack affects the extruder temperature, print bed temperature, and the print head boundaries.
 
 Our attack takes place on a toolpath file that has already been sliced. To increase diversity and demonstrate that TSAT can be implemented on multiple slicers, these files were sliced with MatterSlice, the default slicer for our target printer. We open the toolpath file in a text editor (in this case, Sublime Text 3) and change the values observed in _Figures_ 23 and 24. We save the file as a new file to observe the initial and altered values in the TSAT results. 
- 
-![_Figure_ 23: Benign g-code file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture25.png?raw=true)
- 
-![_Figure_ 24: Malicious toolpath file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture26.png?raw=true)
+
+| Benign | Malicious | 
+| ---: | ---: |
+| ![_Figure_ 23: Benign g-code file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture25.png?raw=true) | ![_Figure_ 24: Malicious toolpath file](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture26.png?raw=true) | 
+| _Figure_ 23: Benign g-code file | _Figure_ 24: Malicious toolpath file |
  
 The results are as follows: the benign file failed one test case (see Appendix B.5), and the malicious file failed eight test cases (see Appendix B.6). In both files, the “fan never engaged” test failed because our slicer does not activate the fan on small prints to increase adhesion to the print bed. This error could be a result of a bug or a design decision made by the MatterSlice developers, or could indicate compromised slicing software. 
 
@@ -435,18 +452,22 @@ The TSAT program has deemed both files unfit for printing. It is up to the 3D pr
 
 To accomplish our third objective, we need to understand the underlying structure of CMB files. CMB files are binary files, with most data stored as floating-point numbers (or four bytes). These files are composed of three sections: header, toolpaths, and End-of-File [^13]
  
-![_Figure_ 25: CMB file header section](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture27.png?raw=true)
+![_Figure_ 25: CMB file header section](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture27.png?raw=true)  
+_Figure_ 25: CMB file header section
 
 In _Figure_ 25, we can see the header section opened in a hex editor (Hex Editor Neo). In _Figure_ 26, we can see the composition of the header section and their corresponding sizes.
  
-![_Figure_ 26: Sub-sections of CMB file header section](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture28.png?raw=true)
+![_Figure_ 26: Sub-sections of CMB file header section](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture28.png?raw=true)  
+_Figure_ 26: Sub-sections of CMB file header section
 
 ### 4.4.2 CMB FILE PENETRATION TESTING
 The header section of the CMB file provides all the information we need to accomplish our objective. We proceed by manipulating the “Part Max X,” “Part Max Y,” and “Part Max Z” hex values. These values indicate the overall part size in their respective axes and are represented as inches and in Little-Endian. _Figures_ 27 and 28 observe the max axes values (highlighted in various shades of gray) before and after modification. The red text indicates the modified values. We save this file as a new file to compare the resulting unchanged and modified values
  
-![_Figure_ 27: CMB file before modification](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture29.png?raw=true)
+![_Figure_ 27: CMB file before modification](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture29.png?raw=true)  
+_Figure_ 27: CMB file before modification
  
-![_Figure_ 28: CMB file after modification](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture30.png?raw=true)
+![_Figure_ 28: CMB file after modification](https://github.com/hassearle/hassearle.github.io/blob/master/Docs/Thesis/Images/Picture30.png?raw=true)  
+_Figure_ 28: CMB file after modification
 
 Similar to our G-code tests, we use the following approach: 
 *	Take the toolpath file path as an input. 
