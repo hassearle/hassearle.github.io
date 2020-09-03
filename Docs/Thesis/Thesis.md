@@ -8,14 +8,14 @@ markdown`
 
 # Toolpath Static Analysis Testing for Additive Manufacturing 
 > By Kyle Searle
-
+>
 > A thesis submitted to the Graduate Faculty of Auburn University in partial fulfillment of the requirements for the Degree of Master of Computer Science and Software Engineering
-
+>
 >Auburn, Alabama  
 > August 8, 2020
-
+>
 > Keywords: Additive Manufacturing, toolpath, 3D printing, static analysis, python
-
+>
 > Approved by  
 > * David Umphress, Chair, Professor of CSSE   
 > * Mark Yampolskiy, Associate professor of CSSE
@@ -1180,6 +1180,7 @@ Email: a.searle274@gmail.com
 * 	Rheem Manufacturing (Water Heating Division), Montgomery, AL (May 2014 – Jan 2017)
 	*	**_Position_** – I.T. COOP Intern
 	*	**_Description_** –I worked with Ashley Boyd, Perry Warren, and many others performing I.T. administration, helpdesk, documentation, research, and computer replacements. 
+
 ## Major Academic Projects Accomplished (Jan 2019 – Aug 2020)
 
 * 	Toolpath Static Analysis Testing for Additive Manufacturing
