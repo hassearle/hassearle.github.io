@@ -2,6 +2,9 @@
 layout: default
 ---
 
+[Thesis](./Docs/Thesis/Thesis.html)
+
+
 Text can be **bold**, _italic_, or ~~strikethrough~~.
 
 [Link to another page](./another-page.html).
