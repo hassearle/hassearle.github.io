@@ -1,8 +1,11 @@
 ---
 layout: default
 ---
-
-[Thesis](./Docs/Thesis/Thesis.html)
+| Resume  | Publishing      | Recommendation Letters  |
+| :---:   | :---:           | :---:                   |
+| [Resume](./Docs/Thesis/Thesis.html)| [Thesis 08/20](./Docs/Thesis/Thesis.html)  | [Online Commerce Group](./Docs/Recommendations/Trey14.html) |
+|         |                 | [Rheem Water Heating](./Docs/Recommendations/Perry17.html)   |
+|         |                 | [Macon East Academy](./Docs/Recommendations/Gerry14.html)    |
 
 
 Text can be **bold**, _italic_, or ~~strikethrough~~.

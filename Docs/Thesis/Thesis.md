@@ -1157,9 +1157,9 @@ I would also like to thank my school, Auburn University. The resources, people, 
 
 Last but not least, I would like to thank my family. My mother and father, Steve and Susan, for their financial support through college and making me live up to my potential. My wife, Morgan, has always stood by my side and supported me. She has given me unconditional love and support and challenges me to be a better person every day. I consider myself am a lucky man to have such deep and loving relationships from my many friends and family.
 
-Kyle Ash Searle
-Auburn University
-Aug 2020
+Kyle Ash Searle  
+Auburn University  
+Aug 2020  
  
 # VITA
 
