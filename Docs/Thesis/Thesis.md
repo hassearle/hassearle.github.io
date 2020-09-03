@@ -1143,25 +1143,26 @@ if __name__ == '__main__':
  
 # ACKNOWLEDGEMENTS
 
-	First and foremost, I want to thank my advisor Dr. David Umphress from the computer science and software engineering department at Auburn University, Alabama. It has been an honor to work under him as his graduate research assistant and lab administrator. My entire life, up until this point, I have been a student. I have had many professors, good and bad. But I have never met someone that can match the deep love of teaching that Dr. Umphress has. 
+First and foremost, I want to thank my advisor Dr. David Umphress from the computer science and software engineering department at Auburn University, Alabama. It has been an honor to work under him as his graduate research assistant and lab administrator. My entire life, up until this point, I have been a student. I have had many professors, good and bad. But I have never met someone that can match the deep love of teaching that Dr. Umphress has. 
 
-	He is a shining example of what a true leader should be and someone I look up too. He is genuinely one of the most amazing people I have had the privilege of working under and consider him a friend. 
+He is a shining example of what a true leader should be and someone I look up too. He is genuinely one of the most amazing people I have had the privilege of working under and consider him a friend. 
 
-	While there is no doubt that I would not be where I am in life if I had not met Dr. Umphress, I would also not be the person I am today without him. The lessons and experience I’ve learned under his leadership will forever encourage me to “do cool things.”
+While there is no doubt that I would not be where I am in life if I had not met Dr. Umphress, I would also not be the person I am today without him. The lessons and experience I’ve learned under his leadership will forever encourage me to “do cool things.”
 
-	I would also like to thank Dr. Louis Payton, who helped me discover my love for 3D printing and giving me the tools to make it possible. I recognize and appreciate the support of my defense committee members: Dr. Mark Yampolskiy and Dr. Drew Springall, for contributing their time, interest, and invaluable advice. 
+I would also like to thank Dr. Louis Payton, who helped me discover my love for 3D printing and giving me the tools to make it possible. I recognize and appreciate the support of my defense committee members: Dr. Mark Yampolskiy and Dr. Drew Springall, for contributing their time, interest, and invaluable advice. 
 
-	I would also like to acknowledge a few friends and colleagues: Bhargav Joshi, Charlie Harper, Neda Topuz, Hamza Alkofahi, Demarcus Campbell, Lakshmi Krishnaprasad, and Jordan Sosnowski. They all inspire me to push past my limits and are all genuinely exceptional people. It is both an honor and a privilege to be their friends. I do not doubt that they will all do amazing things with their lives.
+I would also like to acknowledge a few friends and colleagues: Bhargav Joshi, Charlie Harper, Neda Topuz, Hamza Alkofahi, Demarcus Campbell, Lakshmi Krishnaprasad, and Jordan Sosnowski. They all inspire me to push past my limits and are all genuinely exceptional people. It is both an honor and a privilege to be their friends. I do not doubt that they will all do amazing things with their lives.
 
-	I would also like to thank my school, Auburn University. The resources, people, and experiences here, in my opinion, cannot be matched anywhere else in the world. 
-	
-	Last but not least, I would like to thank my family. My mother and father, Steve and Susan, for their financial support through college and making me live up to my potential. My wife, Morgan, has always stood by my side and supported me. She has given me unconditional love and support and challenges me to be a better person every day. I consider myself am a lucky man to have such deep and loving relationships from my many friends and family.
+I would also like to thank my school, Auburn University. The resources, people, and experiences here, in my opinion, cannot be matched anywhere else in the world. 
 
-	Kyle Ash Searle
-	Auburn University
-	Aug 2020
+Last but not least, I would like to thank my family. My mother and father, Steve and Susan, for their financial support through college and making me live up to my potential. My wife, Morgan, has always stood by my side and supported me. She has given me unconditional love and support and challenges me to be a better person every day. I consider myself am a lucky man to have such deep and loving relationships from my many friends and family.
+
+Kyle Ash Searle
+Auburn University
+Aug 2020
  
 # VITA
+
 ## KYLE ASH SEARLE
 Cell: +1 (334)-399-2285  
 Email: a.searle274@gmail.com 
