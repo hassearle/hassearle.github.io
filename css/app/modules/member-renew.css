@@ -1,0 +1,87 @@
+.member-renew {
+  position: relative;
+  background-color: #F4F8FD;
+  border: 10px solid white;
+  margin: 10px;
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+  display: flex;
+  flex-direction: column;
+  letter-spacing: normal; }
+  @media screen and (min-width: 768px) {
+    .member-renew {
+      min-width: 400px;
+      max-width: 450px; } }
+  .member-renew__help {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+  .member-renew__header {
+    text-align: center;
+    max-width: calc(100% - 20px);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    height: 100%; }
+    @media screen and (min-width: 768px) {
+      .member-renew__header {
+        max-width: 235px; } }
+  .member-renew__icon {
+    margin-top: 23px;
+    margin-bottom: 7px; }
+  .member-renew__title {
+    font-size: 14px;
+    line-height: 20px;
+    margin-bottom: 2px;
+    font-weight: 700; }
+  .member-renew__intro {
+    margin-bottom: 5px; }
+  .member-renew__intro,
+  .member-renew__intro p {
+    font-size: 12px;
+    line-height: 18px;
+    color: #84909B; }
+  .member-renew__cost {
+    font-size: 14px;
+    line-height: 20px; }
+  .member-renew__body {
+    border-top: 1px solid #EEEEEE;
+    height: 100%;
+    margin: 20px 30px 15px;
+    padding-top: 10px; }
+  .member-renew__list {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 0; }
+    @media screen and (min-width: 768px) {
+      .member-renew__list {
+        padding: 0 10px;
+        justify-content: flex-start; } }
+  .member-renew__list-item {
+    display: flex;
+    align-items: center;
+    margin: 5px 0 5px; }
+    @media screen and (min-width: 768px) {
+      .member-renew__list-item {
+        width: 50%;
+        margin: 10px 0 10px; } }
+    @media screen and (max-width: 767px) {
+      .member-renew__list-item:nth-child(2) {
+        order: 3; } }
+    @media screen and (max-width: 767px) {
+      .member-renew__list-item:nth-child(3) {
+        order: 2; } }
+    @media screen and (max-width: 767px) {
+      .member-renew__list-item:nth-child(4) {
+        order: 4; } }
+  .member-renew__list-title {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    padding-left: 10px; }
+    @media screen and (min-width: 768px) {
+      .member-renew__list-title {
+        padding-right: 15px; } }

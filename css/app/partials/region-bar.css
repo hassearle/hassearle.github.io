@@ -1,0 +1,85 @@
+.region-bar {
+  display: none;
+  background: #BD8BCA;
+  padding: 10px 0 5px;
+  position: relative;
+  z-index: 101; }
+  .region-bar__actions {
+    top: 0;
+    position: absolute;
+    right: 10px; }
+    @media screen and (min-width: 480px) {
+      .region-bar__actions {
+        top: 3px;
+        right: 20px; } }
+    @media screen and (min-width: 768px) {
+      .region-bar__actions {
+        top: 10px;
+        right: 20px; } }
+  .region-bar__inner {
+    display: flex;
+    width: 100%;
+    padding-left: 5px;
+    padding-right: 5px; }
+    @media screen and (min-width: 768px) {
+      .region-bar__inner {
+        padding-left: 0;
+        padding-right: 0; } }
+  .region-bar__body {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap; }
+    .region-bar__body .region-bar__cta .ui.button {
+      margin: 0; }
+      .region-bar__body .region-bar__cta .ui.button:focus {
+        background: transparent;
+        box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.2) !important; }
+    @media screen and (min-width: 768px) {
+      .region-bar__body {
+        justify-content: center;
+        flex-wrap: nowrap; } }
+    @media screen and (min-width: 1024px) {
+      .region-bar__body {
+        width: 80%; } }
+    @media (min-width: 768px) and (max-width: 1023px) {
+      .region-bar__body {
+        margin: 0;
+        flex-wrap: wrap;
+        width: 100%; }
+        .region-bar__body .region-bar__lang .ui.icon.button {
+          margin: 0; } }
+  .region-bar__msg {
+    font-size: 0.9rem;
+    color: #FFFFFF;
+    align-items: center;
+    font-weight: 600;
+    margin-right: 20%;
+    display: block;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .region-bar__msg {
+        margin-bottom: 0;
+        display: flex;
+        margin-right: 15px; } }
+    @media screen and (min-width: 1024px) {
+      .region-bar__msg {
+        margin-right: 15px; } }
+  .region-bar__lang {
+    width: 70%; }
+    @media screen and (min-width: 768px) {
+      .region-bar__lang {
+        width: auto;
+        margin-right: 15px; } }
+  .region-bar__cta {
+    display: flex;
+    align-items: center;
+    width: 30%;
+    justify-content: flex-end; }
+    @media screen and (min-width: 768px) {
+      .region-bar__cta {
+        max-width: 120px;
+        margin-right: 30px; } }
+    @media screen and (min-width: 1024px) {
+      .region-bar__cta {
+        margin-right: 0; } }

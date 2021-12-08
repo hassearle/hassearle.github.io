@@ -1,0 +1,133 @@
+.drill-filter {
+  position: relative;
+  padding: 20px 0; }
+  @media screen and (min-width: 1024px) {
+    .drill-filter {
+      padding: 20px 30px 0; } }
+  .drill-filter__list {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    left: 0;
+    transition: all .3s; }
+    @media screen and (min-width: 768px) {
+      .drill-filter__list {
+        width: 300px; } }
+    .drill-filter__list .drill-filter__list {
+      position: absolute;
+      top: 0;
+      left: 350px; }
+      @media screen and (max-width: 767px) {
+        .drill-filter__list .drill-filter__list {
+          left: 240%; } }
+      @media screen and (min-width: 768px) {
+        .drill-filter__list .drill-filter__list {
+          display: none; } }
+  @media screen and (max-width: 767px) {
+    .drill-filter__list.child-open {
+      left: -120%; } }
+  @media screen and (max-width: 767px) {
+    .drill-filter__list.child-open .open {
+      margin-left: 20%; } }
+  @media screen and (min-width: 480px) {
+    .drill-filter__item.has-child-nodes {
+      background: url("/images/icons/arrow-right-brand.svg") calc(100% - 15px) center no-repeat transparent; } }
+  .drill-filter__item--counter {
+    padding: 0 10px 25px 10px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .drill-filter__item--counter {
+        display: none; } }
+  .drill-filter__item.disabled {
+    opacity: 0.3; }
+  .drill-filter__item__header {
+    display: none; }
+    @media screen and (max-width: 767px) {
+      .drill-filter__item__header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: none !important;
+        margin-bottom: 20px; } }
+  .drill-filter__item__selected {
+    display: none; }
+    @media screen and (max-width: 767px) {
+      .drill-filter__item__selected {
+        text-align: center;
+        padding: 0.5em 0; } }
+  .drill-filter__heading {
+    font-weight: 800;
+    display: block; }
+    @media screen and (min-width: 768px) {
+      .drill-filter__heading {
+        display: none; } }
+  .drill-filter__clear {
+    position: relative;
+    left: -1em;
+    font-weight: 700;
+    color: #BD8BCA;
+    font-size: 14px;
+    cursor: pointer; }
+  .drill-filter__back {
+    position: relative;
+    top: 5px; }
+    @media screen and (min-width: 480px) {
+      .drill-filter__back {
+        background-repeat: no-repeat;
+        background-position: left center;
+        padding-left: 0;
+        color: #BD8BCA;
+        font-weight: 600;
+        margin-bottom: 0;
+        display: block; } }
+    @media screen and (min-width: 768px) {
+      .drill-filter__back {
+        display: none; } }
+  .drill-filter__node {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: none;
+    color: #354657;
+    padding: 10px 30px 10px 10px;
+    border-bottom: 2px solid #EEEEEE;
+    cursor: pointer;
+    position: relative;
+    text-align: left; }
+    .drill-filter__item:last-of-type > .drill-filter__node {
+      border-color: transparent; }
+    @media screen and (min-width: 1024px) {
+      .drill-filter__node {
+        padding: 12px 0; } }
+    @media screen and (min-width: 768px) {
+      .drill-filter__node:hover {
+        color: #BD8BCA; } }
+    .drill-filter__node--focus {
+      background: url("/images/icons/tick-circle-fill-brand.svg") calc(100% - 15px) center no-repeat transparent;
+      background-color: #F4F8FE;
+      background-size: 30px; }
+      @media screen and (min-width: 480px) {
+        .drill-filter__node--focus {
+          background-color: transparent; } }
+  .drill-filter__node__child-count {
+    color: #354657;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 12px;
+    font-weight: 500; }
+    @media screen and (min-width: 480px) {
+      .drill-filter__node__child-count {
+        display: none; } }
+  .drill-filter__node__parent.has-child-active {
+    font-weight: 700;
+    color: #BD8BCA; }
+  .drill-filter__node__parent.open {
+    color: #BD8BCA;
+    background: url("/images/icons/arrow-right.svg") calc(100% - 15px) center no-repeat transparent; }
+    .drill-filter__node__parent.open + ul.drill-filter__list {
+      display: block; }
+      @media screen and (max-width: 767px) {
+        .drill-filter__node__parent.open + ul.drill-filter__list {
+          left: 120%; } }

@@ -1,0 +1,41 @@
+.crop__inner {
+  border: 2px solid #EEEEEE;
+  border-radius: 5px;
+  padding: 20px 20px 10px;
+  margin-bottom: 20px; }
+
+.crop__controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px; }
+
+.crop__rotate {
+  margin: 0 2px;
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+  outline: none; }
+
+.crop__cancel {
+  background: transparent;
+  border: 0;
+  color: #DE6C6C;
+  text-decoration: underline;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  outline: none; }
+  .crop__cancel:hover, .crop__cancel:focus {
+    text-decoration: none; }
+
+.crop__new {
+  background: transparent;
+  border: 0;
+  color: #A25EB5;
+  text-decoration: underline;
+  font-size: 1rem;
+  margin-top: 15px;
+  cursor: pointer;
+  outline: none; }
+  .crop__new:hover, .crop__new:focus {
+    text-decoration: none; }

@@ -1,0 +1,107 @@
+body .carousel .owl-nav {
+  width: 100%; }
+  @media screen and (min-width: 768px) {
+    body .carousel .owl-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(calc(-50% - 20px));
+      height: 45px;
+      pointer-events: none; } }
+  body .carousel .owl-nav .owl-next, body .carousel .owl-nav .owl-prev {
+    width: 40px;
+    height: 40px;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    opacity: 1;
+    transition: all .3s;
+    border-radius: 100%;
+    pointer-events: all; }
+    body .carousel .owl-nav .owl-next span, body .carousel .owl-nav .owl-prev span {
+      display: none; }
+    body .carousel .owl-nav .owl-next.disabled, body .carousel .owl-nav .owl-prev.disabled {
+      display: none; }
+    body .carousel .owl-nav .owl-next:active, body .carousel .owl-nav .owl-next:hover, body .carousel .owl-nav .owl-next:focus, body .carousel .owl-nav .owl-prev:active, body .carousel .owl-nav .owl-prev:hover, body .carousel .owl-nav .owl-prev:focus {
+      outline: none; }
+  body .carousel .owl-nav .owl-next {
+    position: absolute;
+    right: 15px; }
+    @media screen and (min-width: 1024px) {
+      body .carousel .owl-nav .owl-next {
+        right: 25px; } }
+  body .carousel .owl-nav .owl-prev {
+    position: absolute;
+    left: 15px; }
+    @media screen and (min-width: 1024px) {
+      body .carousel .owl-nav .owl-prev {
+        left: 25px; } }
+
+.owl-carousel.carousel-basic .owl-stage,
+.owl-carousel.carousel-basic .owl-stage-outer,
+.owl-carousel.carousel-basic .owl-item {
+  height: 100% !important; }
+
+.owl-carousel .owl-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; }
+  .owl-carousel .owl-dots .owl-dot {
+    width: 16px;
+    height: 16px;
+    margin: 0 8px;
+    background: #D1D1D1;
+    border-radius: 100px;
+    position: relative;
+    z-index: 9; }
+    .owl-carousel .owl-dots .owl-dot.active {
+      background: #A25EB5; }
+    @media screen and (min-width: 768px) {
+      .owl-carousel .owl-dots .owl-dot {
+        width: 10px;
+        height: 10px;
+        margin: 0 5px; } }
+
+.owl-carousel .owl-nav {
+  display: none; }
+  @media screen and (min-width: 1440px) {
+    .owl-carousel .owl-nav {
+      display: block; } }
+
+.owl-carousel .owl-dots {
+  display: flex; }
+  @media screen and (min-width: 1440px) {
+    .owl-carousel .owl-dots {
+      margin-top: 20px !important;
+      display: flex; } }
+
+.infinite-product-carousel--norepeat .owl-stage {
+  margin: 0 auto; }
+
+.infinite-product-carousel--narrow {
+  padding-top: 20px;
+  padding-bottom: 0; }
+  .infinite-product-carousel--narrow .owl-stage-outer {
+    width: 100%; }
+  .infinite-product-carousel--narrow .owl-item {
+    padding: 12px; }
+
+.owl-carousel.off {
+  display: block; }
+
+.carousel--hide-nav .owl-nav {
+  display: none; }
+
+.hero-card-carousel {
+  padding-bottom: 20px !important;
+  margin-bottom: 30px !important; }
+  @media screen and (min-width: 768px) {
+    .hero-card-carousel {
+      padding-bottom: 0; } }
+  .hero-card-carousel .owl-item {
+    padding-bottom: 15px; }
+  .hero-card-carousel .owl-dots {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto; }

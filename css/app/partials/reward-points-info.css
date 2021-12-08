@@ -1,0 +1,12 @@
+.reward-points-info {
+  border: 2px solid #EEEEEE;
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px; }
+  .reward-points-info__heading {
+    margin-bottom: 5px; }
+  .reward-points-info__text {
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      .reward-points-info__text {
+        font-size: 16px; } }

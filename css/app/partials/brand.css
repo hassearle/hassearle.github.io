@@ -1,0 +1,69 @@
+.brand__content {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .brand__content {
+      flex-direction: row; } }
+
+.brand__body {
+  padding: 20px;
+  align-self: center;
+  text-align: center;
+  order: 2; }
+  @media screen and (min-width: 768px) {
+    .brand__body {
+      text-align: left;
+      order: 1;
+      padding: 30px 30px 15px;
+      flex: 0 0 60%; } }
+  @media screen and (min-width: 1024px) {
+    .brand__body {
+      padding: 20px 80px;
+      flex: 0 0 50%; }
+      .brand__body > p {
+        font-size: 20px;
+        line-height: 1.4; } }
+
+.brand__title {
+  display: flex;
+  align-items: center;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .brand__title {
+      flex-direction: row; } }
+
+.brand__logo {
+  vertical-align: middle;
+  max-height: 50px;
+  max-width: 100px;
+  margin-bottom: 10px; }
+  @media screen and (min-width: 768px) {
+    .brand__logo {
+      margin: 0 20px 0 0; } }
+
+.brand__image {
+  display: block;
+  order: 1;
+  background: #EEEEEE;
+  background-size: cover;
+  background-position: center;
+  min-height: 200px;
+  margin: 0 -20px; }
+  @media screen and (min-width: 768px) {
+    .brand__image {
+      margin: 0;
+      order: 2; } }
+  @media screen and (min-width: 768px) {
+    .brand__image {
+      display: block;
+      min-height: 300px;
+      flex: 0 0 40%; } }
+  @media screen and (min-width: 1024px) {
+    .brand__image {
+      min-height: 500px;
+      flex: 0 0 50%; } }
+
+@media screen and (min-width: 768px) {
+  .brand--reversed .brand__content {
+    flex-direction: row-reverse; } }

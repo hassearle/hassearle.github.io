@@ -1,0 +1,28 @@
+.payment-method {
+  border: 2px solid #EEEEEE;
+  background-color: #FAFAFA;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin: 0 auto;
+  flex-direction: row; }
+  .payment-method__icon {
+    margin-bottom: 2px; }
+    @media screen and (min-width: 768px) {
+      .payment-method__icon {
+        margin-right: 10px;
+        margin-bottom: 0; } }
+  .payment-method__text {
+    font-size: 14px;
+    font-weight: 600; }
+    @media screen and (min-width: 768px) {
+      .payment-method__text {
+        font-size: 16px; } }
+  .payment-method--warning {
+    border-color: #DE6C6C;
+    background-color: #FBF0F0; }

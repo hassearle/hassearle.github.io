@@ -1,0 +1,57 @@
+.enroll-advocate {
+  background-repeat: repeat;
+  background-position: 0 0;
+  background-color: transparent;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .enroll-advocate {
+      display: block;
+      width: 100%; } }
+  @media screen and (min-width: 1024px) {
+    .enroll-advocate {
+      display: block;
+      width: 425px;
+      min-height: 540px; } }
+  .enroll-advocate__body {
+    position: relative;
+    z-index: 6;
+    margin-top: 45px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px; }
+    @media screen and (min-width: 768px) {
+      .enroll-advocate__body {
+        margin-top: 70px;
+        margin-left: 45px;
+        margin-right: 90px; } }
+    @media screen and (min-width: 1024px) {
+      .enroll-advocate__body {
+        margin-left: 45px;
+        margin-right: 100px; } }
+  .enroll-advocate__title, .enroll-advocate__text {
+    color: #FFFFFF; }
+  .enroll-advocate__text {
+    font-size: 16px;
+    line-height: 24px; }
+  .enroll-advocate__overlay {
+    background: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 5; }
+  .enroll-advocate--setup {
+    background-size: cover;
+    display: none; }
+    @media screen and (min-width: 1024px) {
+      .enroll-advocate--setup {
+        display: block; } }
+  .enroll-advocate--linkgen {
+    background-size: cover; }
+    @media screen and (min-width: 768px) {
+      .enroll-advocate--linkgen {
+        min-height: 400px; } }

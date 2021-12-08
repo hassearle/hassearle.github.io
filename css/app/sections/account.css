@@ -1,0 +1,485 @@
+.account.account-details .card-account__profile {
+  display: block;
+  margin-bottom: 0; }
+
+.account.account-details .hero {
+  display: flex; }
+
+.account.account-details .account__nav--mobile {
+  display: none; }
+
+.account main {
+  padding-top: 84px; }
+  @media screen and (min-width: 768px) {
+    .account main {
+      padding-top: 102px; } }
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .account main {
+      padding-top: 83px; } }
+
+.account__content {
+  margin-bottom: 10px;
+  margin-top: -80px; }
+  @media screen and (min-width: 768px) {
+    .account__content {
+      margin-bottom: 50px;
+      margin-top: -80px; } }
+  @media screen and (min-width: 768px) {
+    .account__content > .grid > .column:first-child {
+      padding-right: 0 !important; } }
+  @media screen and (max-width: 767px) {
+    .account__content--flush-mob {
+      margin-top: 0; } }
+  @media screen and (max-width: 767px) {
+    .account__content--flush-mob .card-account {
+      padding-left: 0;
+      padding-right: 0; } }
+  @media screen and (max-width: 767px) {
+    .account__content--flush-mob .card-account .card-account__heading {
+      padding-right: 1em;
+      padding-left: 1em; } }
+
+.account__nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  @media screen and (min-width: 768px) {
+    .account__nav {
+      margin-left: -1em;
+      margin-right: -1em; }
+      .account__nav .push-nav__link {
+        padding-left: 2em !important;
+        padding-right: 1em !important; } }
+  .account__nav--mobile {
+    display: flex;
+    height: 50px;
+    align-items: center;
+    background-color: #F4F8FD;
+    text-decoration: none;
+    border-bottom: 1px solid #D1D1D1;
+    margin-top: -1em;
+    margin-left: -1em;
+    margin-right: -1em;
+    font-size: 16px; }
+    .account__nav--mobile span {
+      margin: 0 5px 0 15px; }
+    .account__nav--mobile:hover {
+      text-decoration: underline; }
+    @media screen and (min-width: 768px) {
+      .account__nav--mobile {
+        display: none; } }
+  .account__nav--min {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+    margin-right: 0; }
+    .account__nav--min span {
+      margin: 0 5px 0 25px; }
+  .account__nav .push-nav__link {
+    font-size: 16px;
+    padding-right: 30px; }
+  .account__nav .push-nav__list--top > .push-nav__item > .push-nav__link {
+    justify-content: space-between; }
+  @media (max-width: 767px) {
+    .account__nav .push-nav__list--top {
+      margin-left: -25px;
+      margin-right: -25px;
+      margin-top: 20px;
+      border-top: 1px solid #D1D1D1; } }
+
+@media screen and (min-width: 768px) {
+  .account__support {
+    padding: 20px !important; } }
+
+.account__support-link {
+  text-decoration: none;
+  margin-top: 10px;
+  display: block; }
+  .account__support-link:hover {
+    text-decoration: underline; }
+
+.account__support .ui.button.primary {
+  margin: 0 auto !important;
+  min-width: auto; }
+  @media (min-width: 992px) and (max-width: 1024px) {
+    .account__support .ui.button.primary {
+      font-size: 11px; } }
+
+.account__btn-add {
+  display: flex;
+  font-size: 14px;
+  text-decoration: none;
+  cursor: pointer; }
+  .account__btn-add--centered {
+    width: 220px;
+    margin: 45px auto; }
+  .account__btn-add--mt {
+    margin-top: 20px; }
+  .account__btn-add--mt-mb-lg {
+    margin-bottom: 10px;
+    margin-top: 25px; }
+    @media screen and (min-width: 768px) {
+      .account__btn-add--mt-mb-lg {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        margin-left: 30px; } }
+  .account__btn-add span {
+    margin-right: 8px; }
+  .account__btn-add .icon--add-circle {
+    display: block; }
+  .account__btn-add .icon--arrow-down-circle-fill {
+    display: none; }
+  .account__btn-add.open .icon--add-circle {
+    display: none; }
+  .account__btn-add.open .icon--arrow-down-circle-fill {
+    display: block; }
+  .account__btn-add--secondary {
+    color: #354657;
+    font-size: 16px;
+    margin-bottom: 0 !important;
+    margin-top: 20px; }
+  .account__btn-add--dynamic {
+    padding-top: 5px;
+    display: flex;
+    flex-wrap: wrap; }
+  .account__btn-add .icon--add-circle {
+    transition: all ease-in-out 0.2s; }
+  .account__btn-add--active .icon--add-circle {
+    transform: rotate(45deg); }
+  .account__btn-add--dark, .account__btn-add--dark:focus, .account__btn-add--dark:active {
+    color: #354657 !important; }
+  .account__btn-add--lg {
+    font-size: 16px; }
+
+.account__btn-row {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 425px; }
+
+.account__btn-row-help {
+  display: flex;
+  align-items: center;
+  padding-right: 5px; }
+
+.account .account-address {
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: none;
+  padding: 0;
+  border-bottom: 1px solid #EEEEEE;
+  border-radius: 0;
+  padding-bottom: 15px; }
+  @media screen and (min-width: 768px) {
+    .account .account-address {
+      padding: 30px;
+      border: 1px solid #EEEEEE; } }
+  .account .account-address__heading em {
+    color: #A25EB5;
+    font-weight: normal; }
+    @media screen and (min-width: 768px) {
+      .account .account-address__heading em {
+        font-size: 16px; } }
+  .account .account-address__edit {
+    position: absolute;
+    top: 0;
+    right: 0; }
+    @media screen and (min-width: 768px) {
+      .account .account-address__edit {
+        top: 19px;
+        right: 20px; } }
+  .account .account-address__copy {
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      .account .account-address__copy {
+        font-style: italic; } }
+  .account .account-address__checkbox {
+    font-size: 12px; }
+
+.account .account-order-detail .tracking__wrap {
+  box-shadow: none; }
+  .account .account-order-detail .tracking__wrap .track-order {
+    max-width: 100%; }
+
+.account .account-order-detail__products-header {
+  position: relative;
+  width: 100%; }
+
+.account .account-order-detail__summary {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  overflow: hidden; }
+  .account .account-order-detail__summary-price {
+    font-weight: 800;
+    line-height: 1;
+    float: left;
+    margin-right: 20px; }
+    @media screen and (min-width: 768px) {
+      .account .account-order-detail__summary-price {
+        font-size: 20px; } }
+  .account .account-order-detail__summary-loyalty {
+    display: block;
+    font-weight: normal;
+    color: #A25EB5;
+    line-height: 1;
+    float: right;
+    text-align: right; }
+    @media screen and (min-width: 768px) {
+      .account .account-order-detail__summary-loyalty {
+        font-size: 20px; } }
+  .account .account-order-detail__summary-disclaimer {
+    display: block;
+    font-size: 12px;
+    color: #84909B; }
+
+.account .account-payment-method {
+  position: relative;
+  border-bottom: 1px solid #EEEEEE;
+  margin-bottom: 5px;
+  font-size: 14px;
+  padding: 20px 30px 25px 0; }
+  @media screen and (max-width: 767px) {
+    .account .account-payment-method:first-of-type {
+      border-top: 1px solid #EEEEEE; } }
+  @media screen and (min-width: 768px) {
+    .account .account-payment-method {
+      padding: 20px 0 20px 0; } }
+  @media screen and (min-width: 768px) {
+    .account .account-payment-method__detail {
+      display: flex;
+      flex-direction: row; } }
+  .account .account-payment-method__detail-name {
+    width: 100%;
+    line-height: 1.2; }
+    @media screen and (min-width: 768px) {
+      .account .account-payment-method__detail-name {
+        display: inline-flex;
+        width: 30%;
+        align-items: center; } }
+  .account .account-payment-method__detail-number {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .account .account-payment-method__detail-number {
+        display: inline-flex;
+        width: 15%;
+        align-items: center; } }
+  .account .account-payment-method__detail-expires {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .account .account-payment-method__detail-expires {
+        display: inline-flex;
+        width: 30%;
+        align-items: center; } }
+  .account .account-payment-method__heading {
+    display: inline-flex;
+    align-items: center; }
+    .account .account-payment-method__heading span {
+      margin-right: 10px; }
+  @media screen and (max-width: 767px) {
+    .account .account-payment-method__icon, .account .account-payment-method__icon:before {
+      width: 20px;
+      height: 20px; } }
+  .account .account-payment-method__edit {
+    position: absolute;
+    top: 20px;
+    right: -5px; }
+    @media screen and (min-width: 768px) {
+      .account .account-payment-method__edit {
+        top: 14px;
+        right: 15px; } }
+  .account .account-payment-method__checkbox {
+    font-size: 12px; }
+  .account .account-payment-method em {
+    color: #A25EB5;
+    font-weight: 500;
+    margin-left: 10px; }
+    @media screen and (min-width: 768px) {
+      .account .account-payment-method em {
+        margin-left: 40px; } }
+
+@media screen and (min-width: 768px) {
+  .account .account-payment-details__title {
+    margin-bottom: 18px; } }
+
+@media screen and (min-width: 768px) {
+  .account .account-payment-details__title--lgdt {
+    margin-bottom: 30px; } }
+
+@media screen and (min-width: 768px) {
+  .account .account-payment-details__heading {
+    display: flex;
+    align-items: center; } }
+
+.account .account-payment-details__heading-detail {
+  display: flex;
+  align-items: center; }
+
+.account .account-payment-details__heading-icon {
+  margin-right: 14px; }
+  .account .account-payment-details__heading-icon-account-credit {
+    transform: scale(0.75); }
+
+.account .account-payment-details__heading-wrapper-account-credit {
+  background-color: #BD8BCA;
+  display: inline-flex;
+  width: 24px;
+  height: 14px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0.5px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.2); }
+
+.account .account-payment-details__heading-inline-value {
+  font-weight: 500;
+  line-height: 1.6; }
+  @media screen and (min-width: 768px) {
+    .account .account-payment-details__heading-inline-value {
+      margin-left: 10px; } }
+
+.account .account-payment-details__heading-inline-number, .account .account-payment-details__heading-inline-expires {
+  width: 100%;
+  display: flex;
+  align-items: center; }
+  @media screen and (min-width: 768px) {
+    .account .account-payment-details__heading-inline-number, .account .account-payment-details__heading-inline-expires {
+      width: auto; } }
+
+.account .account-payment-details__divider {
+  width: 100%;
+  height: 2px;
+  background-color: #EEEEEE;
+  margin: 10px 0; }
+  @media screen and (min-width: 768px) {
+    .account .account-payment-details__divider {
+      margin: 20px 0; } }
+
+.account .account-saved {
+  margin-top: 16px; }
+  @media screen and (min-width: 768px) {
+    .account .account-saved {
+      margin-top: 0; } }
+  .account .account-saved .products {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important; }
+
+.account .icon--no-events {
+  pointer-events: none; }
+
+@media (max-width: 767px) {
+  .mob-pull {
+    margin-left: -15px;
+    margin-right: -15px; } }
+
+@media (max-width: 767px) {
+  .mob-pull--top {
+    margin-top: -15px; } }
+
+@media (max-width: 767px) {
+  .ui.grid .ui.stackable.grid.account-order__grid {
+    margin-left: 0 !important;
+    margin-right: 0 !important; } }
+
+.tel-add {
+  display: none;
+  letter-spacing: normal;
+  margin-bottom: 0 !important;
+  position: relative; }
+  .tel-add__inner {
+    background-color: #F4F8FD;
+    padding: 20px; }
+    @media screen and (min-width: 768px) {
+      .tel-add__inner {
+        min-width: 500px;
+        padding: 30px; } }
+  .tel-add__label {
+    margin-bottom: 5px;
+    display: block; }
+  .tel-add__header {
+    display: flex;
+    justify-content: space-between; }
+  .tel-add__title {
+    font-size: 18px;
+    font-weight: 700; }
+    @media screen and (min-width: 768px) {
+      .tel-add__title {
+        font-size: 20px;
+        line-height: 28px; } }
+  .tel-add__delete {
+    text-decoration: none;
+    color: #DE6C6C;
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      .tel-add__delete {
+        font-size: 16px; } }
+  .tel-add__item .dropdown.dropdown--fx {
+    margin-bottom: 5px; }
+  .tel-add__item .tel-add__phone-field {
+    margin-bottom: 20px !important; }
+  .tel-add__body {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 768px) {
+      .tel-add__body {
+        flex-direction: row; } }
+  .tel-add__btn.button.ui {
+    margin-right: 0;
+    margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      .tel-add__btn.button.ui {
+        min-width: 110px !important;
+        margin-left: 20px;
+        margin-top: 0; } }
+  .tel-add__dropdown .dropdown__text.default {
+    font-size: 16px !important; }
+  .tel-add__actions {
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+    @media screen and (min-width: 768px) {
+      .tel-add__actions {
+        top: 30px;
+        right: 32px; } }
+
+.tel-add--single {
+  display: none;
+  margin-top: 25px !important;
+  margin-bottom: 20px !important; }
+  .tel-add--single .tel-add__body {
+    flex-direction: column; }
+  .tel-add--single .tel-add__inner {
+    min-width: 100%; }
+  .tel-add--single.tel-add--single-active {
+    display: flex; }
+
+.email-add {
+  display: none; }
+
+.coapplicant-add {
+  transition: all ease-in-out 0.3s;
+  display: none;
+  position: relative;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: #F4F8FD; }
+  @media screen and (min-width: 768px) {
+    .coapplicant-add {
+      padding: 35px 40px 40px 40px; } }
+  .coapplicant-add__actions {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    right: 15px; }
+    @media screen and (min-width: 768px) {
+      .coapplicant-add__actions {
+        top: 30px;
+        right: 32px; } }
+  .coapplicant-add__close {
+    opacity: 0.5; }
+  .coapplicant-add--active {
+    display: flex;
+    flex-direction: column; }

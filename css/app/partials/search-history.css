@@ -1,0 +1,60 @@
+.search-history {
+  display: none;
+  padding: 32px 20px 48px;
+  margin-top: 60px; }
+  @media screen and (min-width: 480px) {
+    .search-history {
+      margin-top: 0;
+      padding: 42px 20px 48px; } }
+  @media screen and (min-width: 1024px) {
+    .search-history {
+      padding: 20px 170px 40px; } }
+  .search-history__list {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0; }
+  .search-history__heading {
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  .search-history__item {
+    background-image: url("data:image/svg+xml,%0A%3Csvg width='20px' height='20px' viewBox='0 0 20 20' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd'%3E%3Cg id='search' transform='translate(-5.000000, -5.000000)'%3E%3Cpolygon id='Path' opacity='0.606' points='0 0 30 0 30 30 0 30'%3E%3C/polygon%3E%3Cpath d='M12.928,17.741 C15.4312617,19.6772522 19.0079101,19.3367529 21.1008507,16.9629392 C23.1937913,14.5891255 23.083575,10.9979967 20.849,8.757 C18.6096351,6.51327333 15.0112339,6.39870974 12.6336802,8.4954459 C10.2561264,10.5921821 9.91987397,14.1766695 11.866,16.679 L12.331,17.276 L12.928,17.741 L12.928,17.741 Z M11.636,19.385 L9.17,21.85 L11.656,19.365 L11.698,19.32 L11.635,19.386 L11.636,19.385 Z M7.757,20.435 L5.293,22.9 L7.757,20.436 L7.757,20.435 Z M7.757,20.435 L10.222,17.971 L10.202,17.993 L10.242,17.95 L7.757,20.435 Z M10.95,7.343 C13.9825846,4.31083667 18.8666655,4.20922556 22.022737,7.11263667 C25.1788086,10.0160478 25.4841434,14.8916341 22.7149639,18.1661155 C19.9457844,21.440597 15.0871867,21.9491235 11.7,19.319 L11.657,19.364 L6.707,24.314 C6.4542346,24.5665868 6.08591629,24.6651379 5.74078702,24.57253 C5.39565775,24.4799221 5.12615087,24.2102246 5.03378701,23.86503 C4.94142315,23.5198353 5.04023459,23.1515868 5.293,22.899 L10.243,17.949 L10.288,17.907 C7.81512985,14.7219476 8.09885039,10.1944192 10.95,7.343 L10.95,7.343 Z' id='Shape' fill='%23C3C8CD' fill-rule='nonzero'%3E%3C/path%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-size: 19px;
+    padding-left: 40px; }
+  .search-history__link {
+    font-weight: 700;
+    color: #354657;
+    text-decoration: none;
+    font-size: 1rem; }
+  .search-history--row {
+    display: none;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0; }
+    @media screen and (min-width: 1024px) {
+      .search-history--row {
+        flex-direction: row;
+        padding: 20px 0; } }
+    .search-history--row .search-history__heading {
+      margin: 0 0 10px; }
+      @media screen and (min-width: 1024px) {
+        .search-history--row .search-history__heading {
+          margin: 0 20px 0 0; } }
+    .search-history--row .search-history__list {
+      display: flex;
+      flex-direction: column; }
+      @media screen and (min-width: 1024px) {
+        .search-history--row .search-history__list {
+          flex-direction: row;
+          align-items: center; } }
+    .search-history--row .search-history__item {
+      padding: 5px 0 5px 35px; }
+      @media screen and (min-width: 768px) {
+        .search-history--row .search-history__item {
+          padding: 0 0 0 25px;
+          margin-right: 20px; } }
+  .search-history--enroll {
+    margin-top: 0px;
+    justify-content: flex-start; }

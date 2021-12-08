@@ -1,0 +1,149 @@
+.progress-radial {
+  display: block;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+  background-image: linear-gradient(-48deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+  .progress-radial::before, .progress-radial::after {
+    content: '';
+    display: block;
+    width: 3px;
+    height: 3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #BD8BCA;
+    top: 0;
+    left: 13.5px; }
+  .progress-radial::after {
+    transform: rotate(222deg);
+    transform-origin: center 15px; }
+  .progress-radial__face {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; }
+  .progress-radial--xs {
+    width: 12px;
+    height: 12px; }
+    .progress-radial--xs::before, .progress-radial--xs::after {
+      width: 2px;
+      height: 2px;
+      left: 5px; }
+    .progress-radial--xs::after {
+      transform-origin: center 6px; }
+    .progress-radial--xs .progress-radial__face {
+      width: 8px;
+      height: 8px; }
+  .progress-radial--sm {
+    width: 16px;
+    height: 16px; }
+    .progress-radial--sm::before, .progress-radial--sm::after {
+      width: 2px;
+      height: 2px;
+      left: 7px; }
+    .progress-radial--sm::after {
+      transform-origin: center 8px; }
+    .progress-radial--sm .progress-radial__face {
+      width: 12px;
+      height: 12px; }
+  .progress-radial--lg {
+    width: 40px;
+    height: 40px; }
+    .progress-radial--lg::before, .progress-radial--lg::after {
+      width: 5px;
+      height: 5px;
+      left: 17.5px; }
+    .progress-radial--lg::after {
+      transform-origin: center 20px; }
+    .progress-radial--lg .progress-radial__face {
+      width: 30px;
+      height: 30px; }
+  .progress-radial[data-percentage="10"] {
+    background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="10"]::after {
+      transform: rotate(36deg); }
+  .progress-radial[data-percentage="20"] {
+    background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="20"]::after {
+      transform: rotate(72deg); }
+  .progress-radial[data-percentage="30"] {
+    background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="30"]::after {
+      transform: rotate(108deg); }
+  .progress-radial[data-percentage="40"] {
+    background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="40"]::after {
+      transform: rotate(144deg); }
+  .progress-radial[data-percentage="50"] {
+    background-image: linear-gradient(-90deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="50"]::after {
+      transform: rotate(180deg); }
+  .progress-radial[data-percentage="60"] {
+    background-image: linear-gradient(-54deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="60"]::after {
+      transform: rotate(216deg); }
+  .progress-radial[data-percentage="70"] {
+    background-image: linear-gradient(-18deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="70"]::after {
+      transform: rotate(252deg); }
+  .progress-radial[data-percentage="80"] {
+    background-image: linear-gradient(18deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="80"]::after {
+      transform: rotate(288deg); }
+  .progress-radial[data-percentage="90"] {
+    background-image: linear-gradient(54deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="90"]::after {
+      transform: rotate(324deg); }
+  .progress-radial[data-percentage="100"] {
+    background-image: linear-gradient(90deg, #BD8BCA 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #BD8BCA 50%, #C1C7CC 50%, #C1C7CC); }
+    .progress-radial[data-percentage="100"]::after {
+      transform: rotate(360deg); }
+  .progress-radial--secondary {
+    background-image: linear-gradient(-48deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC) !important; }
+    .progress-radial--secondary::before, .progress-radial--secondary::after {
+      background-color: #95C0F1 !important; }
+    .progress-radial--secondary[data-percentage="10"] {
+      background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(126deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="10"]::after {
+        transform: rotate(36deg); }
+    .progress-radial--secondary[data-percentage="20"] {
+      background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(162deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="20"]::after {
+        transform: rotate(72deg); }
+    .progress-radial--secondary[data-percentage="30"] {
+      background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(198deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="30"]::after {
+        transform: rotate(108deg); }
+    .progress-radial--secondary[data-percentage="40"] {
+      background-image: linear-gradient(90deg, #C1C7CC 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(234deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="40"]::after {
+        transform: rotate(144deg); }
+    .progress-radial--secondary[data-percentage="50"] {
+      background-image: linear-gradient(-90deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="50"]::after {
+        transform: rotate(180deg); }
+    .progress-radial--secondary[data-percentage="60"] {
+      background-image: linear-gradient(-54deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="60"]::after {
+        transform: rotate(216deg); }
+    .progress-radial--secondary[data-percentage="70"] {
+      background-image: linear-gradient(-18deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="70"]::after {
+        transform: rotate(252deg); }
+    .progress-radial--secondary[data-percentage="80"] {
+      background-image: linear-gradient(18deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="80"]::after {
+        transform: rotate(288deg); }
+    .progress-radial--secondary[data-percentage="90"] {
+      background-image: linear-gradient(54deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="90"]::after {
+        transform: rotate(324deg); }
+    .progress-radial--secondary[data-percentage="100"] {
+      background-image: linear-gradient(90deg, #95C0F1 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0)), linear-gradient(270deg, #95C0F1 50%, #C1C7CC 50%, #C1C7CC); }
+      .progress-radial--secondary[data-percentage="100"]::after {
+        transform: rotate(360deg); }

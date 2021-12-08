@@ -1,0 +1,74 @@
+.lrp-footer {
+  font-size: 14px;
+  margin-top: auto;
+  width: 100%;
+  padding: 40px 0 50px;
+  border-top: 1px solid #EEEEEE; }
+  @media screen and (min-width: 768px) {
+    .lrp-footer {
+      border-top: 2px solid #EEEEEE; } }
+  .lrp-footer__heading {
+    text-align: center;
+    margin-bottom: 20px; }
+  .lrp-footer__list {
+    margin: 0 0 25px;
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .lrp-footer__list {
+        text-align: center; } }
+    .lrp-footer__list-item {
+      list-style-type: none;
+      display: flex;
+      align-items: center;
+      width: 100%; }
+      @media screen and (min-width: 768px) {
+        .lrp-footer__list-item {
+          display: inline-flex;
+          width: auto; } }
+    .lrp-footer__list--primary .lrp-footer__list-item {
+      justify-content: center; }
+      @media screen and (min-width: 768px) {
+        .lrp-footer__list--primary .lrp-footer__list-item {
+          justify-content: flex-start;
+          margin-right: 20px; }
+          .lrp-footer__list--primary .lrp-footer__list-item:last-child {
+            margin-right: 0; } }
+    .lrp-footer__list--primary .lrp-footer__link {
+      height: auto; }
+    .lrp-footer__list--secondary .lrp-footer__list-item {
+      margin-bottom: 20px; }
+      @media screen and (min-width: 768px) {
+        .lrp-footer__list--secondary .lrp-footer__list-item {
+          padding: 0 10px;
+          border-right: 1px solid #354657;
+          margin-bottom: 0; }
+          .lrp-footer__list--secondary .lrp-footer__list-item:last-child {
+            border: none; } }
+    .lrp-footer__list--secondary .lrp-footer__link {
+      width: 100%; }
+  .lrp-footer__link {
+    display: flex;
+    height: 100%;
+    line-height: 1;
+    align-content: center;
+    justify-content: center;
+    color: #354657;
+    text-decoration: none; }
+    .lrp-footer__link:hover, .lrp-footer__link:active {
+      color: #354657; }
+    .lrp-footer__link:hover {
+      text-decoration: underline; }
+    .lrp-footer__link i {
+      margin-right: 10px; }
+  .lrp-footer__divider {
+    border-top: 2px solid #EEEEEE;
+    padding-top: 40px; }
+    @media screen and (max-width: 767px) {
+      .lrp-footer__divider {
+        padding-bottom: 100px; } }
+  .lrp-footer__copyright {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto; }

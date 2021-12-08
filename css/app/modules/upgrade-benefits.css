@@ -1,0 +1,43 @@
+.upgrade-benefits {
+  padding: 30px 0; }
+  @media screen and (min-width: 1024px) {
+    .upgrade-benefits {
+      padding: 85px 0 0 30px; } }
+  @media screen and (min-width: 1440px) {
+    .upgrade-benefits {
+      padding: 85px 50px 0 85px; } }
+  .upgrade-benefits__heading {
+    text-align: center;
+    margin-bottom: 30px;
+    display: none; }
+    @media screen and (min-width: 768px) {
+      .upgrade-benefits__heading {
+        display: block; } }
+  .upgrade-benefits__content {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0; }
+  .upgrade-benefits__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .upgrade-benefits__item {
+        flex-direction: row;
+        text-align: left;
+        margin-bottom: 40px;
+        align-items: flex-start; } }
+    .upgrade-benefits__item:last-of-type {
+      margin-bottom: 0; }
+  @media screen and (min-width: 480px) {
+    .upgrade-benefits__icon {
+      margin-right: 25px; } }
+  .upgrade-benefits__sub-heading {
+    line-height: 24px;
+    margin-bottom: 0;
+    font-weight: 700; }
+    @media screen and (min-width: 768px) {
+      .upgrade-benefits__sub-heading {
+        line-height: 28px; } }

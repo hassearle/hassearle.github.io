@@ -1,0 +1,89 @@
+.wire-transfer__notification {
+  background-color: #F4F8FD;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  border-radius: 5px; }
+  @media screen and (min-width: 768px) {
+    .wire-transfer__notification {
+      flex-direction: row; } }
+  .wire-transfer__notification-text {
+    margin-top: 10px;
+    text-align: center; }
+    @media screen and (max-width: 767px) {
+      .wire-transfer__notification-text p {
+        font-size: 14px;
+        line-height: 1.4; } }
+    @media screen and (min-width: 768px) {
+      .wire-transfer__notification-text {
+        margin-top: 0;
+        margin-left: 20px;
+        text-align: left; } }
+
+.wire-transfer__content {
+  background-color: #EEEEEE;
+  padding: 20px; }
+
+.wire-transfer__items {
+  display: flex;
+  align-content: stretch;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .wire-transfer__items {
+      margin-left: -15px;
+      flex-direction: row; } }
+
+.wire-transfer__details {
+  background-color: #FFFFFF;
+  border: 1px solid #D1D1D1;
+  flex: 1 33.33%;
+  padding: 10px;
+  margin: 0 0 10px;
+  border-radius: 5px;
+  min-height: 160px; }
+  @media screen and (min-width: 768px) {
+    .wire-transfer__details {
+      margin: 0 0 0 15px;
+      min-height: 0; } }
+
+.wire-transfer__title {
+  color: #84909B;
+  font-size: 12px; }
+  @media screen and (min-width: 768px) {
+    .wire-transfer__title {
+      line-height: 18px;
+      font-size: 14px; } }
+  .wire-transfer__title:not(:first-of-type) {
+    margin-top: 15px; }
+
+.wire-transfer__desc {
+  font-weight: 700;
+  margin: 0;
+  font-size: 14px; }
+  @media screen and (min-width: 768px) {
+    .wire-transfer__desc {
+      font-size: 16px; } }
+
+.wire-transfer__field {
+  margin-top: 15px; }
+  @media screen and (min-width: 768px) {
+    .wire-transfer__field {
+      margin-top: 10px; } }
+
+@media screen and (min-width: 768px) {
+  .wire-transfer--alt .wire-transfer__items {
+    flex-direction: column; } }
+
+.wire-transfer--alt .wire-transfer__content {
+  background-color: transparent;
+  padding: 0; }
+
+.wire-transfer--alt .wire-transfer__details {
+  border: 2px solid #EEEEEE;
+  margin-top: 10px;
+  padding: 15px; }
+
+.wire-transfer--alt .wire-transfer__field {
+  margin-top: 25px; }

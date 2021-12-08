@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="30px" viewBox="0 0 91 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>Global Components / Promotions / Promo Tag</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Shopping---Homepage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Shop-Homepage" transform="translate(-60.000000, -2117.000000)">
+            <g id="Group-81-Copy" transform="translate(60.000000, 2097.000000)">
+                <g id="Global-Components-/-Promotions-/-Promo-Tag" transform="translate(0.000000, 20.000000)">
+                    <g transform="translate(0.000000, 0.000000)">
+                        <path d="M1.0658141e-13,0 L89.5857864,3.55271368e-15 C90.1380712,3.45126062e-15 90.5857864,0.44771525 90.5857864,1 C90.5857864,1.26521649 90.4804296,1.5195704 90.2928932,1.70710678 L77,15 L90.2928932,28.2928932 C90.6834175,28.6834175 90.6834175,29.3165825 90.2928932,29.7071068 C90.1053568,29.8946432 89.8510029,30 89.5857864,30 L1.0658141e-13,30 L1.0658141e-13,0 Z" id="Rectangle" fill="#BD8BCA"></path>
+                        <text id="PROMO" font-family="Raleway-ExtraBold, Raleway" font-size="14" font-weight="600" line-spacing="20" fill="#FFFFFF">
+                            <tspan x="13.174" y="18">PROMO</tspan>
+                        </text>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

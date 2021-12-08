@@ -1,0 +1,328 @@
+body .fc-unthemed .fc-toolbar {
+  display: none; }
+
+body .fc-unthemed .fc-head {
+  display: none;
+  background: #354657;
+  border: none;
+  height: 28px; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed .fc-head {
+      display: table-header-group; } }
+  body .fc-unthemed .fc-head .fc-day-header {
+    border: none;
+    color: white;
+    font-size: 12px;
+    padding: 5px 0; }
+
+body .fc-unthemed .fc-day--has-events {
+  background: #BD8BCA; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed .fc-day--has-events {
+      background: none; } }
+
+body .fc-unthemed .fc-day-top .fc-day-top-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+body .fc-unthemed .fc-day-top .fc-day-number {
+  font-size: 16px;
+  font-weight: 700;
+  color: #354657;
+  float: none !important;
+  line-height: 1;
+  width: 30px;
+  height: 30px;
+  border-radius: 1000px;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  margin: 5px; }
+  @media screen and (min-width: 768px) {
+    body .fc-unthemed .fc-day-top .fc-day-number {
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      font-weight: 800; } }
+  body .fc-unthemed .fc-day-top .fc-day-number--has-events {
+    background: #BD8BCA;
+    color: white !important; }
+
+body .fc-unthemed .fc-day-top .fc-day-event-count {
+  margin-right: 5px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #354657;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden; }
+  @media screen and (min-width: 768px) {
+    body .fc-unthemed .fc-day-top .fc-day-event-count {
+      font-size: 20px; } }
+
+body .fc-unthemed .fc-bgevent-skeleton {
+  display: none; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed .fc-bgevent-skeleton {
+      display: block; } }
+
+body .fc-unthemed .fc-content-skeleton {
+  padding-bottom: 0; }
+
+body .fc-unthemed .fc-content-skeleton tbody {
+  display: none; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed .fc-content-skeleton tbody {
+      display: table-row-group; } }
+
+body .fc-unthemed .fc-event {
+  margin: 2px 10px;
+  padding: 3px 10px;
+  border-radius: 1000px;
+  cursor: pointer;
+  transition: none;
+  border: 0;
+  color: #FFFFFF; }
+  body .fc-unthemed .fc-event.fc-event-corporate {
+    background: #354657;
+    border-color: #354657; }
+    body .fc-unthemed .fc-event.fc-event-corporate:hover {
+      background: #222d37;
+      border-color: #222d37;
+      color: white; }
+  body .fc-unthemed .fc-event.fc-event-advocate {
+    background: #A25EB5;
+    border-color: #A25EB5; }
+    body .fc-unthemed .fc-event.fc-event-advocate:hover {
+      background: #874799;
+      border-color: #874799;
+      color: white; }
+  body .fc-unthemed .fc-event.fc-not-end {
+    margin-right: 0; }
+  body .fc-unthemed .fc-event.fc-not-start {
+    margin-left: 0;
+    padding-left: 10px; }
+  body .fc-unthemed .fc-event .fc-content {
+    display: flex;
+    align-items: center; }
+  body .fc-unthemed .fc-event .fc-title {
+    font-weight: 800;
+    font-size: 11px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap; }
+    @media screen and (min-width: 768px) {
+      body .fc-unthemed .fc-event .fc-title {
+        font-size: 12px; } }
+  body .fc-unthemed .fc-event.fc-event-today:not(.fc-bgevent) {
+    margin-left: 40px; }
+
+body .fc-unthemed .fc-more-cell .fc-more {
+  font-weight: 800;
+  font-size: 14px;
+  color: #354657;
+  margin: 2px 10px;
+  display: block; }
+
+body .fc-unthemed .fc-bgevent-skeleton {
+  top: auto;
+  bottom: 0;
+  pointer-events: none; }
+
+body .fc-unthemed .fc-bgevent {
+  margin: 0;
+  border-radius: 0;
+  opacity: 1;
+  border: 0 !important;
+  pointer-events: all;
+  text-align: center;
+  font-weight: 600; }
+  body .fc-unthemed .fc-bgevent.fc-event-online {
+    background: #67b251;
+    border-color: #67b251; }
+    body .fc-unthemed .fc-bgevent.fc-event-online:hover {
+      background: #5ca248;
+      border-color: #5ca248; }
+  body .fc-unthemed .fc-bgevent .fc-content {
+    justify-content: center; }
+  body .fc-unthemed .fc-bgevent .fc-title {
+    font-weight: 600; }
+
+body .fc-unthemed .fc-today {
+  background: #4e657e; }
+  body .fc-unthemed .fc-today.fc-day {
+    position: relative; }
+    body .fc-unthemed .fc-today.fc-day:not(.fc-selected) {
+      z-index: -1; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed .fc-today.fc-day:before {
+      content: 'today';
+      color: white;
+      font-weight: 800;
+      position: absolute;
+      top: 55px;
+      left: -6px;
+      transform: rotate(-90deg);
+      line-height: 1;
+      font-size: 14px; } }
+  @media screen and (min-width: 768px) {
+    body .fc-unthemed .fc-today.fc-day:before {
+      top: 70px;
+      left: -8px;
+      font-size: 18px; } }
+  body .fc-unthemed .fc-today .fc-day-number {
+    color: white; }
+  body .fc-unthemed .fc-today .fc-day-number--has-events {
+    background: none; }
+    @media screen and (min-width: 480px) {
+      body .fc-unthemed .fc-today .fc-day-number--has-events {
+        background: #354657; } }
+  body .fc-unthemed .fc-today .fc-day-event-count {
+    color: white !important; }
+
+body .fc-unthemed .fc-other-month {
+  background: #EEEEEE;
+  opacity: 1; }
+  body .fc-unthemed .fc-other-month .fc-day-number {
+    color: #D1D1D1; }
+
+body .fc-unthemed .fc-week.fc-row {
+  min-height: auto; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed .fc-week.fc-row {
+      padding-bottom: 30px; } }
+
+body .fc-unthemed.fc-month-view .fc table,
+body .fc-unthemed.fc-month-view .fc-body > tr > .fc-widget-content {
+  border: 0; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-month-view .fc table,
+    body .fc-unthemed.fc-month-view .fc-body > tr > .fc-widget-content {
+      border: 1px solid #e1e1e1; } }
+
+body .fc-unthemed.fc-month-view .fc-bg > table {
+  border-collapse: separate;
+  border-spacing: 1px; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-month-view .fc-bg > table {
+      border-collapse: collapse; } }
+  body .fc-unthemed.fc-month-view .fc-bg > table td {
+    border: 1px solid #e1e1e1;
+    border-radius: 4px; }
+    @media screen and (min-width: 480px) {
+      body .fc-unthemed.fc-month-view .fc-bg > table td {
+        border-radius: 0; } }
+
+body .fc-unthemed.fc-month-view .fc-content-skeleton {
+  display: flex;
+  height: 100%;
+  align-items: center; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-month-view .fc-content-skeleton {
+      display: block; } }
+
+body .fc-unthemed.fc-month-view .fc-day-top .fc-day-number {
+  margin: 0 auto; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-month-view .fc-day-top .fc-day-number {
+      margin: 5px; } }
+
+body .fc-unthemed.fc-month-view .fc-day-event-count {
+  display: none; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-month-view .fc-day-event-count {
+      display: block; } }
+
+body .fc-unthemed.fc-single-week-view td {
+  border: 1px solid #e1e1e1; }
+
+body .fc-unthemed.fc-single-week-view .fc-row .fc-bgevent-skeleton {
+  z-index: auto; }
+
+body .fc-unthemed.fc-single-week-view .fc-selected-date-bgevent {
+  z-index: 1;
+  transform: scale(1.1, 1);
+  top: 6px;
+  border-bottom-left-radius: 4px;
+  border-bottom-right-radius: 4px; }
+
+body .fc-unthemed.fc-single-week-view .fc-scroller {
+  overflow: visible !important; }
+
+body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-top-wrap {
+  flex-direction: column;
+  align-items: flex-start; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-top-wrap {
+      flex-direction: row;
+      align-items: center; } }
+
+body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-number {
+  margin-bottom: 18px; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-number {
+      margin-bottom: 5px; } }
+  body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-number--has-events {
+    background: none; }
+    @media screen and (min-width: 480px) {
+      body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-number--has-events {
+        background: #BD8BCA; } }
+
+body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-event-count {
+  color: white;
+  margin: 10px 10px 5px 10px;
+  align-self: center; }
+  @media screen and (min-width: 480px) {
+    body .fc-unthemed.fc-single-week-view .fc-day-top .fc-day-event-count {
+      color: #354657;
+      margin: 0;
+      margin-right: 5px; } }
+
+body .fc-unthemed.fc-single-week-view .fc-content-skeleton {
+  min-height: 90px; }
+
+body .fc-unthemed.fc-single-week-view .fc-bg .fc-selected {
+  background: #BD8BCA;
+  transform: scale(1.1);
+  border-radius: 5px;
+  box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.15);
+  position: relative; }
+  body .fc-unthemed.fc-single-week-view .fc-bg .fc-selected:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: calc(100% - 1px);
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid #BD8BCA; }
+
+body .fc-unthemed.fc-single-week-view .fc-selected .fc-day-number {
+  background: #A25EB5;
+  color: white; }
+
+body .fc-unthemed.fc-single-week-view .fc-selected .fc-day-event-count {
+  color: white; }
+
+body .fc-unthemed.fc-single-week-view .fc-bgevent-skeleton {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    body .fc-unthemed.fc-single-week-view .fc-bgevent-skeleton {
+      display: block; } }
+
+@media screen and (max-width: 767px) {
+  body .fc-unthemed.fc-single-week-view .fc-content-skeleton td:nth-child(1),
+  body .fc-unthemed.fc-single-week-view .fc-content-skeleton td:nth-child(2),
+  body .fc-unthemed.fc-single-week-view .fc-content-skeleton td:nth-child(6),
+  body .fc-unthemed.fc-single-week-view .fc-content-skeleton td:nth-child(7),
+  body .fc-unthemed.fc-single-week-view .fc-bg td:nth-child(1),
+  body .fc-unthemed.fc-single-week-view .fc-bg td:nth-child(2),
+  body .fc-unthemed.fc-single-week-view .fc-bg td:nth-child(6),
+  body .fc-unthemed.fc-single-week-view .fc-bg td:nth-child(7) {
+    display: none; } }

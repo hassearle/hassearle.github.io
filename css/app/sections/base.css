@@ -1,0 +1,40 @@
+html {
+  height: 100%; }
+  html body {
+    min-height: 100%; }
+    @media screen and (min-width: 1024px) {
+      html body {
+        position: relative;
+        margin: 0;
+        overflow: auto; } }
+
+main {
+  min-height: 50vh; }
+
+section.main {
+  margin: 30px 0; }
+  @media screen and (min-width: 1024px) {
+    section.main {
+      margin: 70px 0; } }
+
+mark {
+  background-color: transparent;
+  color: inherit; }
+
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0; }
+
+button {
+  font-family: "rawline", sans-serif; }
+
+dl {
+  margin-bottom: 0; }
+
+dd {
+  padding: 0;
+  margin: 0; }
+
+figure {
+  margin: 0; }

@@ -1,0 +1,28 @@
+.card-location {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  max-width: 800px; }
+  .card-location__body {
+    padding: 20px; }
+    @media screen and (min-width: 480px) {
+      .card-location__body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center; } }
+  .card-location__address {
+    font-weight: 800;
+    font-size: 1rem;
+    margin-bottom: 10px; }
+    .card-location__address > br {
+      display: none; }
+    @media screen and (min-width: 480px) {
+      .card-location__address {
+        margin: 0;
+        margin-right: 20px; }
+        .card-location__address > br {
+          display: block; } }
+  .card-location__button {
+    margin-bottom: 0;
+    width: auto; }

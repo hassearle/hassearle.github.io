@@ -1,0 +1,37 @@
+version: 2.1 # use CircleCI 2.1
+jobs: # a collection of steps
+  deploy-tag: # runs not using Workflows must have a `build` job as entry point
+    working_directory: ~/build # directory where steps will run
+    docker: # run the steps with Docker
+      - image: wearewqa/circleci:latest # ...with this image as the primary container; this is where all `steps` will run
+    steps: # a collection of executable commands
+      - add_ssh_keys:
+          fingerprints:
+            - "f6:14:48:9e:98:1c:42:d6:62:8d:6e:41:df:19:7b:91"
+      - run:
+          name: Checkout Tag
+          command: |
+            git clone -b << pipeline.git.tag >> git@github.com:WQA-Ltd/doterra-infotrax-eu-dist.git .
+      - run: 
+          name: Fix host authenticity for 18.130.224.159
+          command: |
+            ssh-keyscan 18.130.224.159 >> ~/.ssh/known_hosts
+      - run:
+          name: Deploy
+          command: |
+            TAG=<< pipeline.git.tag >>; DIRECTORY=eu$(echo $TAG | sed 's/[.]/-/g' | xargs)-hotfix-evo-2-0; echo $DIRECTORY
+            ssh ubuntu@18.130.224.159 "cd /var/www/html/; mkdir -p $DIRECTORY;rm -rf /var/www/html/$DIRECTORY/*"
+            zip -r artifact.zip *
+            scp artifact.zip ubuntu@18.130.224.159:/var/www/html/$DIRECTORY
+            ssh ubuntu@18.130.224.159 "cd /var/www/html/$DIRECTORY; unzip -o artifact.zip; rm artifact.zip; exit"
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - deploy-tag:
+          filters:
+            tags:
+              only: /.*/
+            branches:
+              ignore: /.*/

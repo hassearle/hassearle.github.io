@@ -1,0 +1,17 @@
+.product-category__header {
+  background-color: #F4F8FD;
+  margin-bottom: 20px; }
+  .product-category__header-content {
+    padding: 20px 0; }
+
+.product-category__intro {
+  text-align: center; }
+  .product-category__intro, .product-category__intro p {
+    font-size: 20px; }
+
+.product-category__filters {
+  display: flex;
+  justify-content: space-between; }
+
+.category__adverts {
+  margin-bottom: 20px; }

@@ -1,0 +1,65 @@
+.countdown {
+  background-image: url("/images/countdown-bg.png");
+  background-size: cover;
+  padding: 50px 40px 40px 40px;
+  color: #FFFFFF;
+  border-radius: 5px;
+  overflow: hidden; }
+  .countdown__wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly; }
+  .countdown__header {
+    text-align: center; }
+  .countdown__title {
+    font-size: 34px;
+    font-weight: 800;
+    margin-bottom: 8px;
+    line-height: 1.2; }
+  .countdown__sub-title {
+    font-size: 20px; }
+    @media screen and (min-width: 768px) {
+      .countdown__sub-title {
+        max-width: 500px;
+        margin-right: auto;
+        margin-left: auto; } }
+  .countdown__results {
+    display: flex;
+    line-height: 1; }
+  .countdown__result-item {
+    position: relative;
+    padding: 15px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .countdown__result-item {
+        padding: 22px; } }
+    .countdown__result-item::after {
+      content: '';
+      position: absolute;
+      height: 60px;
+      width: 1px;
+      background: #FFFFFF;
+      top: 40px;
+      right: 0; }
+    .countdown__result-item:last-child::after {
+      content: '';
+      display: none; }
+  .countdown__result-item-number {
+    font-size: 60px;
+    font-weight: 600; }
+    @media screen and (min-width: 768px) {
+      .countdown__result-item-number {
+        font-size: 72px; } }
+  .countdown__result-item-label {
+    font-size: 20px; }
+  .countdown--slim {
+    padding: 30px 20px 25px 20px; }
+    @media screen and (min-width: 768px) {
+      .countdown--slim .countdown__header {
+        text-align: left; } }
+    .countdown--slim .countdown__wrap {
+      flex-direction: column; }
+      @media screen and (min-width: 768px) {
+        .countdown--slim .countdown__wrap {
+          flex-direction: row; } }

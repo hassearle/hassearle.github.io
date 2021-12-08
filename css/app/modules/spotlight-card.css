@@ -1,0 +1,38 @@
+.spotlight-card--upgrade {
+  z-index: 100;
+  position: relative;
+  margin-top: -30px !important;
+  text-align: center;
+  padding-bottom: 30px !important; }
+  @media screen and (min-width: 768px) {
+    .spotlight-card--upgrade {
+      padding-top: 50px !important;
+      padding-bottom: 50px !important;
+      margin-bottom: 20px !important; } }
+  .spotlight-card--upgrade .spotlight-card__icon, .spotlight-card--upgrade .spotlight-card__icon:before {
+    width: 40px;
+    height: 40px; }
+    @media screen and (min-width: 768px) {
+      .spotlight-card--upgrade .spotlight-card__icon, .spotlight-card--upgrade .spotlight-card__icon:before {
+        width: 70px;
+        height: 70px; } }
+  .spotlight-card--upgrade .spotlight-card__heading {
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .spotlight-card--upgrade .spotlight-card__heading {
+        margin-bottom: 20px; } }
+  .spotlight-card--upgrade .spotlight-card__copy {
+    max-width: 475px;
+    margin-left: auto;
+    margin-right: auto; }
+    @media screen and (min-width: 768px) {
+      .spotlight-card--upgrade .spotlight-card__copy {
+        font-size: 20px;
+        line-height: 24px; } }
+  .spotlight-card--upgrade .spotlight-card__button {
+    margin: 10px 0 0 !important;
+    width: 100% !important; }
+    @media screen and (min-width: 768px) {
+      .spotlight-card--upgrade .spotlight-card__button {
+        width: 315px !important;
+        margin: 30px 0 0 !important; } }

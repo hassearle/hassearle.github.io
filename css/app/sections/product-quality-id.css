@@ -1,0 +1,129 @@
+.product-quality-id {
+  padding-bottom: 30px; }
+  .product-quality-id__wrap {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+    min-height: 100%; }
+    @media screen and (min-width: 768px) {
+      .product-quality-id__wrap {
+        margin-top: 30px;
+        min-height: 450px; } }
+    @media screen and (min-width: 1024px) {
+      .product-quality-id__wrap {
+        min-height: 600px; } }
+    @media screen and (min-width: 1440px) {
+      .product-quality-id__wrap {
+        min-height: 620px; } }
+  .product-quality-id__promo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: url("/images/product-quality-id-bgpic.png") center center no-repeat transparent;
+    background-size: cover;
+    padding: 30px;
+    min-height: 350px; }
+    @media screen and (min-width: 1024px) {
+      .product-quality-id__promo {
+        padding: 0;
+        min-height: 100%;
+        width: 50%; } }
+  .product-quality-id__promo-logo-subtitle {
+    font-size: 30px;
+    font-style: italic;
+    line-height: 1.13;
+    font-weight: 500;
+    color: #FFFFFF; }
+  .product-quality-id__info {
+    background-color: #FFFFFF;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px; }
+    @media screen and (min-width: 1024px) {
+      .product-quality-id__info {
+        width: 50%; } }
+    @media screen and (min-width: 768px) {
+      .product-quality-id__info {
+        padding: 60px; } }
+  .product-quality-id__info-title {
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .product-quality-id__info-title {
+        font-size: 48px;
+        line-height: 48px; } }
+  .product-quality-id__info-copy {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 40px; }
+    .product-quality-id__info-copy p {
+      font-size: 16px; }
+      @media screen and (min-width: 768px) {
+        .product-quality-id__info-copy p {
+          font-size: 20px;
+          line-height: 1.4; } }
+    @media screen and (min-width: 768px) {
+      .product-quality-id__info-copy {
+        max-width: 420px;
+        margin-left: auto;
+        margin-right: auto; } }
+  .product-quality-id__form-field {
+    max-width: 220px;
+    margin-left: auto !important;
+    margin-right: auto !important; }
+    @media screen and (min-width: 768px) {
+      .product-quality-id__form-field {
+        max-width: 360px; } }
+  .product-quality-id__form-label {
+    display: none !important; }
+  .product-quality-id__form-input {
+    min-height: 50px !important; }
+    .product-quality-id__form-input::placeholder {
+      color: #84909B !important; }
+  @media screen and (min-width: 768px) {
+    .product-quality-id__form-submit .ui.button.primary {
+      min-width: 360px; } }
+  .product-quality-id__find-link {
+    font-size: 16px;
+    line-height: 1.5;
+    font-weight: 500;
+    color: #354657;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 0; }
+    .product-quality-id__find-link:hover {
+      text-decoration: underline; }
+    @media screen and (min-width: 768px) {
+      .product-quality-id__find-link {
+        margin-top: 23px; } }
+  .product-quality-id__status-image {
+    width: 150px;
+    margin: -30px auto 30px; }
+    .product-quality-id__status-image img {
+      width: 100%;
+      height: 100%; }
+    .product-quality-id__status-image--pic {
+      width: auto; }
+      .product-quality-id__status-image--pic img {
+        height: initial;
+        width: initial; }
+    .product-quality-id__status-image--diagram {
+      width: 350px; }
+      .product-quality-id__status-image--diagram img {
+        height: initial;
+        width: initial; }
+  .product-quality-id__badge {
+    position: absolute;
+    left: calc(50% - 70px);
+    top: 8%; }
+  .product-quality-id .modal__close {
+    opacity: 0.3; }

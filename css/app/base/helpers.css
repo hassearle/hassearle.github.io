@@ -1,0 +1,78 @@
+/*
+ * Custom Flexbox Helper Classes
+ */
+.flex {
+  display: flex; }
+  .flex.cell {
+    flex: 1; }
+  .flex.equal-sizing > * {
+    flex-basis: 0;
+    flex-grow: 1; }
+  .flex.flex-column {
+    flex-direction: column; }
+    .flex.flex-column.top {
+      align-content: flex-start; }
+    .flex.flex-column.bottom {
+      align-content: flex-end; }
+    .flex.flex-column.vertical-center {
+      align-content: center; }
+    .flex.flex-column.space-between {
+      align-content: space-between; }
+    .flex.flex-column.space-around {
+      align-content: space-around; }
+    @media screen and (max-width: 767px) {
+      .flex.flex-column.reverse-sm {
+        flex-direction: column-reverse; } }
+  .flex.flex-row {
+    flex-direction: row; }
+    .flex.flex-row.wrap {
+      flex-flow: row wrap; }
+    .flex.flex-row.top {
+      align-items: flex-start; }
+    .flex.flex-row.bottom {
+      align-items: flex-end; }
+    .flex.flex-row.vertical-center {
+      align-items: center; }
+    .flex.flex-row.baseline {
+      align-items: baseline; }
+    .flex.flex-row.stretch {
+      align-items: stretch; }
+  .flex.start {
+    justify-content: flex-start; }
+  .flex.end {
+    justify-content: flex-end; }
+  .flex.center {
+    justify-content: center; }
+  .flex.space-between {
+    justify-content: space-between; }
+  .flex.space-around {
+    justify-content: space-around; }
+
+@media only screen and (max-width: 480px) {
+  .flex-on-small-only,
+  .flex-on-small-and-down {
+    display: flex !important; } }
+
+@media only screen and (min-width: 1025px) {
+  .flex-on-extra-large {
+    display: flex !important; } }
+
+@media only screen and (min-width: 769px) {
+  .flex-on-large {
+    display: flex !important; } }
+
+@media only screen and (min-width: 480px) and (max-width: 768px) {
+  .flex-on-medium {
+    display: flex !important; } }
+
+@media only screen and (max-width: 480px) {
+  .flex-on-small {
+    display: flex !important; } }
+
+@media only screen and (min-width: 481px) {
+  .flex-on-medium-and-up {
+    display: flex !important; } }
+
+@media only screen and (max-width: 768px) {
+  .flex-on-medium-and-down {
+    display: flex !important; } }

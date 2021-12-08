@@ -1,0 +1,56 @@
+.alert {
+  display: flex;
+  align-items: center;
+  border: 0;
+  font-size: 13px;
+  font-weight: 700;
+  padding: 10px; }
+  @media screen and (min-width: 768px) {
+    .alert {
+      padding: 10px 20px; } }
+  .alert__icon {
+    margin-right: 10px;
+    width: 24px;
+    height: 24px; }
+    @media screen and (min-width: 768px) {
+      .alert__icon {
+        margin-right: 20px;
+        width: 30px;
+        height: 30px; } }
+  .alert--danger {
+    background-color: #FBF0F0;
+    color: #DE6C6C;
+    border-color: #DE6C6C; }
+  .alert--message {
+    background-color: #F4F8FD;
+    color: #95C0F1;
+    border-color: #95C0F1; }
+  .alert--success {
+    background-color: #F1F7EB;
+    color: #7BB739;
+    border-color: #7BB739; }
+  .alert--warning {
+    background-color: #FCE0BD;
+    color: #F8B259;
+    border-color: #F8B259; }
+  .alert--alt {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    border-radius: 5px;
+    align-items: flex-start;
+    border-width: 1px;
+    border-style: solid;
+    color: #354657;
+    padding: 8px; }
+    @media screen and (min-width: 768px) {
+      .alert--alt {
+        padding: 8px; } }
+    .alert--alt .alert__icon {
+      width: 20px;
+      height: 20px; }
+      @media screen and (min-width: 768px) {
+        .alert--alt .alert__icon {
+          width: 22px;
+          height: 22px;
+          margin-right: 10px; } }

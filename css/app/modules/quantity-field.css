@@ -1,0 +1,40 @@
+.quantity-field {
+  display: flex;
+  width: 150px;
+  height: 50px;
+  border: 2px solid #D1D1D1;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  color: #354657; }
+  .quantity-field__button {
+    background: none;
+    border: none;
+    padding: 0;
+    color: #354657;
+    width: 33.333%;
+    display: flex;
+    align-items: center;
+    outline: none;
+    cursor: pointer; }
+    .quantity-field__button:hover {
+      background-color: #D1D1D1; }
+    .quantity-field__button > i {
+      font-size: 14px;
+      margin: 0 auto; }
+    .quantity-field__button--increment {
+      position: relative;
+      right: -1px; }
+  .quantity-field__input {
+    text-align: center;
+    min-width: 0;
+    border: 0 !important;
+    color: #354657;
+    font-size: 16px;
+    width: 33.333%;
+    font-family: "rawline", sans-serif;
+    font-weight: 600; }
+  .quantity-field--fluid {
+    width: 100%; }
+  @media (min-width: 481px) and (max-width: 768px) {
+    .quantity-field--align-left-sm {
+      margin-left: 0; } }

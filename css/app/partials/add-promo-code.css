@@ -1,0 +1,29 @@
+.promo-code-field {
+  display: none; }
+
+.add-promo-code {
+  position: relative;
+  margin-top: 5px;
+  margin-bottom: 15px; }
+  .add-promo-code__field {
+    height: 50px;
+    padding: 15px 45px 15px 15px !important; }
+    .add-promo-code__field::-ms-clear {
+      display: none; }
+  .add-promo-code__button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    width: 45px;
+    background: transparent;
+    padding: 0;
+    display: none;
+    align-items: center;
+    height: 50px;
+    justify-content: center;
+    outline: none;
+    cursor: pointer; }
+
+.order-summary--promo {
+  display: none; }

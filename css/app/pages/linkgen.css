@@ -1,0 +1,300 @@
+.linkgen main {
+  padding-top: 158px; }
+  @media screen and (min-width: 768px) {
+    .linkgen main {
+      padding-top: 198px; } }
+
+.linkgen__sidetitle {
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .linkgen__sidetitle {
+      font-size: 30px;
+      line-height: 34px;
+      padding: 20px 0;
+      margin-top: 30px !important; } }
+  @media screen and (min-width: 1024px) {
+    .linkgen__sidetitle {
+      margin-top: 40px !important; } }
+
+.linkgen__header {
+  background-color: #F4F8FD;
+  padding-bottom: 100px;
+  padding-top: 80px;
+  text-align: center; }
+  @media screen and (min-width: 768px) {
+    .linkgen__header {
+      margin-top: -1rem;
+      padding-top: 45px; } }
+
+.enroll-linkgen main {
+  padding-top: 150px; }
+  @media screen and (min-width: 768px) {
+    .enroll-linkgen main {
+      padding-top: 77px; } }
+
+.your-link {
+  padding-top: 20px;
+  padding-bottom: 50px;
+  position: relative;
+  padding-left: 15px;
+  padding-right: 15px; }
+  @media screen and (min-width: 768px) {
+    .your-link {
+      padding-bottom: 90px; } }
+  @media screen and (min-width: 1024px) {
+    .your-link {
+      padding-bottom: 110px; } }
+  .your-link__wrap {
+    background: #F4F8FD; }
+  .your-link__title {
+    text-align: center;
+    margin-bottom: 30px; }
+  .your-link__field {
+    padding-bottom: 25px;
+    position: relative;
+    max-width: 929px;
+    margin: 0 auto;
+    color: #354657; }
+    .your-link__field ::-webkit-input-placeholder {
+      color: #354657; }
+    .your-link__field ::-moz-placeholder {
+      color: #354657; }
+    .your-link__field :-ms-input-placeholder {
+      color: #354657; }
+  .your-link__ctas {
+    text-align: center; }
+  .your-link__copy-field {
+    position: relative; }
+  .your-link__copy-field-input {
+    width: 100%;
+    border-radius: 50px;
+    padding-left: 70px;
+    padding-right: 110px;
+    box-shadow: 0 6px 9px 0 rgba(51, 51, 51, 0.15);
+    border: solid 1px #EEEEEE; }
+    .your-link__copy-field-input--preview {
+      color: #354657; }
+      .your-link__copy-field-input--preview::placeholder {
+        color: #354657; }
+  .your-link__copy-field-button.ui.button.icon {
+    position: absolute !important;
+    right: 12px;
+    top: 12px;
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    line-height: normal !important;
+    color: #A25EB5 !important; }
+    .your-link__copy-field-button.ui.button.icon:hover {
+      color: #A25EB5 !important; }
+    .your-link__copy-field-button.ui.button.icon:not(.labeled):not(:disabled):not(.disabled):hover {
+      color: #A25EB5 !important; }
+  .your-link__copy-field-button--preview.ui.button.icon {
+    font-weight: 700 !important; }
+  .your-link__field-avatar {
+    position: absolute;
+    z-index: 10;
+    left: 6px;
+    top: 6px;
+    overflow: hidden;
+    border-radius: 50%;
+    height: 39px;
+    width: 39px; }
+
+.block-message {
+  background: #BD8BCA;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  padding: 20px;
+  color: #FFFFFF; }
+  .block-message__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px; }
+  .block-message__title {
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 20px;
+    line-height: 1.2;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px !important; }
+    .block-message__title a {
+      text-decoration: none;
+      color: #FFFFFF; }
+      .block-message__title a:hover {
+        text-decoration: none;
+        color: #FFFFFF !important; }
+
+.promo-bar {
+  display: flex;
+  border-radius: 5px;
+  overflow: hidden;
+  border: 1px solid #EEEEEE;
+  margin-top: 25px;
+  flex-direction: column; }
+  @media screen and (min-width: 768px) {
+    .promo-bar {
+      flex-direction: row; } }
+  .promo-bar--full {
+    width: 100%; }
+  .promo-bar--mt0 {
+    margin-top: 0; }
+  .promo-bar--drop {
+    box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2); }
+  .promo-bar__content {
+    flex: 2;
+    display: flex;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .promo-bar__content--equal {
+        flex: 1; } }
+    .promo-bar__content--centered {
+      justify-content: center; }
+    .promo-bar__content--padded {
+      padding-top: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 40px; }
+  .promo-bar__list {
+    list-style: none;
+    padding-left: 10px; }
+    @media screen and (min-width: 768px) {
+      .promo-bar__list {
+        padding-left: 35px; } }
+    .promo-bar__list--vertical {
+      padding: 0; }
+      .promo-bar__list--vertical .promo-bar__list-item {
+        margin-bottom: 20px;
+        flex-direction: column; }
+        .promo-bar__list--vertical .promo-bar__list-item:last-child {
+          margin-bottom: 0; }
+      .promo-bar__list--vertical .promo-bar__list-icon {
+        width: 100%;
+        text-align: center; }
+      .promo-bar__list--vertical .promo-bar__list-text {
+        width: 100%;
+        text-align: center; }
+  .promo-bar__list-item {
+    display: flex;
+    margin-bottom: 25px; }
+    .promo-bar__list-item:last-child {
+      margin-bottom: 0; }
+  .promo-bar__list-icon {
+    margin-right: 15px; }
+    @media screen and (min-width: 768px) {
+      .promo-bar__list-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 60px; } }
+  .promo-bar__list-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 0; }
+  .promo-bar__list-info {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 1.5; }
+  .promo-bar__block {
+    flex: 1;
+    background: #A25EB5;
+    padding: 30px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative; }
+    @media screen and (min-width: 768px) {
+      .promo-bar__block {
+        padding: 40px 20px; } }
+    .promo-bar__block--team {
+      background: url("/images/beach_bg.jpg") 0 0 no-repeat transparent;
+      background-size: cover; }
+    .promo-bar__block > * {
+      z-index: 10; }
+  .promo-bar__block-icon {
+    margin-bottom: 20px; }
+  .promo-bar__block-title {
+    margin-bottom: 30px;
+    color: #FFFFFF;
+    text-align: center; }
+  .promo-bar__block-overlay {
+    background: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; }
+    .promo-bar__block-overlay--40 {
+      background: rgba(0, 0, 0, 0.4); }
+
+@media screen and (min-width: 768px) {
+  body.no-menu .header--enroll-linkgen {
+    top: 0; } }
+
+.what-intro {
+  padding-bottom: 40px; }
+  @media screen and (min-width: 768px) {
+    .what-intro {
+      padding-bottom: 90px; } }
+  .what-intro__header {
+    background: #F4F8FD;
+    padding-top: 40px; }
+    @media screen and (min-width: 1024px) {
+      .what-intro__header {
+        padding-top: 70px;
+        padding-bottom: 120px; } }
+  .what-intro__title {
+    font-size: 48px;
+    line-height: 1;
+    text-align: center; }
+  .what-intro__text {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center; }
+    .what-intro__text a {
+      color: #354657;
+      text-decoration: none;
+      font-weight: 700; }
+      .what-intro__text a:hover {
+        color: #A25EB5; }
+  @media screen and (min-width: 1024px) {
+    .what-intro__body {
+      margin-top: -80px; } }
+  .what-intro__block-wrap {
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 768px) {
+      .what-intro__block-wrap {
+        flex-direction: row; } }
+    @media screen and (min-width: 1024px) {
+      .what-intro__block-wrap {
+        max-width: 75%;
+        margin: auto; } }
+  .what-intro__block {
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+    margin-bottom: 25px;
+    flex: 1;
+    background: #FFFFFF;
+    padding: 40px 30px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .what-intro__block {
+        margin-bottom: 0;
+        margin-right: 25px; } }
+    @media screen and (min-width: 768px) {
+      .what-intro__block:last-child {
+        margin-right: 0; } }
+  .what-intro__block-title {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4; }
+  .what-intro__block-copy {
+    font-size: 16px;
+    line-height: 1.5; }

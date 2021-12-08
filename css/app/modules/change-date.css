@@ -1,0 +1,111 @@
+.change-date {
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  padding: 30px 20px;
+  background: #ecebec url("/images/calendar-grey-bg.png");
+  background-size: contain;
+  max-width: 320px; }
+  @media screen and (min-width: 1024px) {
+    .change-date {
+      max-width: 400px; } }
+  @media screen and (min-width: 1440px) {
+    .change-date {
+      flex-direction: row; } }
+  .change-date__icon {
+    background: transparent url("/images/icons/process.svg") no-repeat center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 40px;
+    width: 120px;
+    height: 120px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 1440px) {
+      .change-date__icon {
+        margin-right: 25px;
+        margin-bottom: 0; } }
+  .change-date__content {
+    text-align: center;
+    flex: 1; }
+  .change-date__date {
+    font-weight: 700;
+    display: block; }
+  .change-date .ui.button.primary.basic {
+    margin: 0 !important;
+    border-color: #DE6C6C !important;
+    color: #DE6C6C !important; }
+    .change-date .ui.button.primary.basic:hover:not(:disabled) {
+      color: #DE6C6C !important; }
+  .change-date__head {
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0 0 0 0; }
+    @media screen and (min-width: 1024px) {
+      .change-date__head {
+        padding: 0 10px 10px 10px; } }
+  .change-date__body {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 0 5px 0; }
+    @media screen and (min-width: 1024px) {
+      .change-date__body {
+        padding: 10px 10px 0 10px; } }
+  .change-date__title {
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    margin-right: 10px; }
+    @media screen and (min-width: 1024px) {
+      .change-date__title {
+        font-size: 20px; } }
+  .change-date__change-link {
+    font-size: 12px;
+    line-height: 24px;
+    font-weight: 500;
+    color: #FFFFFF; }
+    @media screen and (min-width: 1024px) {
+      .change-date__change-link {
+        font-size: 16px; } }
+  .change-date__message {
+    font-size: 14px;
+    line-height: 20px; }
+    @media screen and (min-width: 1024px) {
+      .change-date__message {
+        font-size: 16px;
+        line-height: 22px; } }
+  .change-date__message-date {
+    display: block;
+    font-weight: 700; }
+  .change-date--alt {
+    flex-direction: column;
+    padding-top: 15px;
+    padding-bottom: 15px; }
+    @media screen and (min-width: 1024px) {
+      .change-date--alt {
+        padding-top: 30px;
+        padding-bottom: 30px; } }
+  .change-date--alt-red {
+    background: #f9f9f9;
+    flex-direction: column;
+    color: #354657;
+    border: none;
+    border-radius: 0; }
+    @media screen and (min-width: 1024px) {
+      .change-date--alt-red {
+        border-radius: 5px;
+        border: 2px solid #EEEEEE; } }
+    .change-date--alt-red .change-date__change-link {
+      color: #DE6C6C; }
+    .change-date--alt-red .change-date__icon {
+      background: transparent url("/images/process-icon-red.svg") no-repeat center;
+      background-size: contain;
+      color: #DE6C6C;
+      margin-bottom: 0; }

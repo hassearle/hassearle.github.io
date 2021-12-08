@@ -1,0 +1,37 @@
+.referrer {
+  background: #BD8BCA;
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 480px) {
+    .referrer {
+      width: 315px;
+      border-radius: 0 0 5px 5px;
+      position: absolute;
+      z-index: 99; } }
+  .referrer__image {
+    width: 25%;
+    display: flex;
+    align-items: flex-start;
+    margin-top: 20px;
+    justify-content: center; }
+  .referrer__image-link {
+    border-radius: 50%;
+    overflow: hidden;
+    border: 2px solid #FFFFFF;
+    max-width: 40px; }
+  .referrer__body {
+    width: 75%;
+    color: #FFFFFF;
+    padding: 20px 20px 20px 0; }
+  .referrer__title {
+    font-size: 16px;
+    font-weight: 800; }
+  .referrer__info {
+    font-size: 12px;
+    font-weight: 800; }
+  .referrer__cta {
+    line-height: 1; }
+    .referrer__cta a {
+      font-size: 12px;
+      font-weight: 800;
+      color: #FFFFFF; }

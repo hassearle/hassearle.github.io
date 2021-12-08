@@ -1,0 +1,80 @@
+.track-order {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  position: relative;
+  bottom: -20px;
+  width: 100%; }
+  @media screen and (min-width: 480px) {
+    .track-order {
+      width: 90%;
+      margin-left: 5%; } }
+  @media screen and (min-width: 768px) {
+    .track-order {
+      align-items: flex-start;
+      margin-left: auto;
+      max-width: 700px;
+      margin: auto; } }
+  .track-order hr,
+  .track-order .hr {
+    position: relative;
+    top: 23px;
+    border: 1px solid #BD8BCA;
+    border-width: 2px 0 2px 0;
+    height: 0;
+    overflow: hidden;
+    width: 80px;
+    border-radius: 4px;
+    background: none; }
+    @media screen and (min-width: 768px) {
+      .track-order hr,
+      .track-order .hr {
+        align-self: center; } }
+    .track-order hr--grey,
+    .track-order .hr--grey {
+      border-color: #C1C7CD;
+      border-style: dashed;
+      border-radius: 0; }
+    @media screen and (min-width: 768px) {
+      .track-order hr,
+      .track-order .hr {
+        width: 100%;
+        top: -30px; } }
+  .track-order__item-group {
+    border-bottom: 2px solid transparent;
+    margin-top: 12px;
+    color: #C1C7CD; }
+    .track-order__item-group--complete {
+      color: #354657; }
+    .track-order__item-group--active {
+      color: #BD8BCA;
+      border-color: #BD8BCA;
+      margin-top: 0; }
+      .track-order__item-group--active .track-order__item-progress {
+        font-weight: 700; }
+      .track-order__item-group--active .track-order__item-date {
+        margin-bottom: 10px; }
+        @media screen and (min-width: 768px) {
+          .track-order__item-group--active .track-order__item-date {
+            margin-bottom: 20px; } }
+  .track-order__item {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .track-order__item--label {
+      padding-top: 7px;
+      font-size: 12px;
+      text-align: center;
+      font-weight: 500;
+      display: flex;
+      flex-wrap: wrap; }
+      @media screen and (min-width: 480px) {
+        .track-order__item--label {
+          min-width: 105px; } }
+  .track-order--full {
+    width: 100%; }
+
+@media all and (-ms-high-contrast: none) {
+  *::-ms-backdrop,
+  .track-order__item--label {
+    flex-direction: column !important; } }

@@ -1,0 +1,16 @@
+.pop-up {
+  background-color: #FFFFFF;
+  min-height: 200px;
+  box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+  border: solid 2px solid #D1D1D1;
+  background-color: #FFFFFF; }
+  .pop-up.bottom.middle {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 71% 75%, 63% 83%, 55% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 71% 75%, 63% 83%, 55% 75%, 0% 75%); }
+  .pop-up.top.left {
+    -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 71% 75%, 63% 83%, 55% 75%, 0% 75%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 71% 75%, 63% 83%, 55% 75%, 0% 75%); }
+
+.loyalty-order__row-item-data--w-icon .icon--help-circle {
+  position: relative;
+  z-index: 9; }

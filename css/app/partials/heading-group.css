@@ -1,0 +1,23 @@
+.heading-group {
+  display: flex;
+  align-items: center;
+  line-height: 1.4; }
+  @media screen and (min-width: 768px) {
+    .heading-group {
+      line-height: 1.2; } }
+  .heading-group__icon {
+    margin-right: 20px; }
+    @media screen and (max-width: 767px) {
+      .heading-group__icon {
+        font-size: 1.25rem; } }
+  .heading-group__content {
+    display: flex;
+    flex-direction: column; }
+  .heading-group__primary {
+    margin: 0; }
+  .heading-group__secondary {
+    font-size: 14px;
+    font-weight: 500; }
+    @media screen and (min-width: 768px) {
+      .heading-group__secondary {
+        font-size: 20px; } }

@@ -1,0 +1,105 @@
+.costs__label {
+  padding-right: 6px; }
+
+.costs__price--lt {
+  text-decoration: line-through; }
+
+.costs__price--pr {
+  padding-right: 15px; }
+
+.costs__price--lg {
+  font-size: 24px;
+  line-height: 32px; }
+  @media screen and (min-width: 768px) {
+    .costs__price--lg {
+      font-size: 28px;
+      line-height: 36px; } }
+
+.costs__row {
+  display: flex;
+  align-items: flex-end; }
+  .costs__row--lead {
+    font-size: 16px;
+    font-weight: 700;
+    color: #354657; }
+    @media screen and (min-width: 768px) {
+      .costs__row--lead {
+        font-size: 20px;
+        line-height: 28px; } }
+  .costs__row--support {
+    color: #84909B;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px; }
+    @media screen and (min-width: 768px) {
+      .costs__row--support {
+        font-size: 16px;
+        line-height: 24px; } }
+  .costs__row--center {
+    justify-content: center; }
+  .costs__row--opacity-75 {
+    opacity: 0.75; }
+
+.costs__pv {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px; }
+  @media screen and (min-width: 768px) {
+    .costs__pv {
+      font-size: 20px;
+      line-height: 28px; } }
+  @media screen and (min-width: 768px) {
+    .costs__pv--sm {
+      font-size: 16px;
+      line-height: 24px; } }
+
+.costs__badge {
+  border: 1px solid #FFFFFF;
+  border-radius: 4px;
+  padding: 3px;
+  min-height: 32px;
+  max-width: 255px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 15px;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .costs__badge {
+      margin-top: 16px;
+      margin-bottom: 16px; } }
+
+.costs__badge-label {
+  padding-right: 5px; }
+
+.costs--fs-xs .costs__row--support {
+  font-size: 16px;
+  line-height: 24px; }
+
+.costs--fs-xs .costs__row--lead {
+  font-size: 20px;
+  line-height: 28px; }
+
+.costs--w-mg-b {
+  margin-bottom: 20px; }
+
+@media screen and (min-width: 480px) {
+  .costs--center-sm .costs__row {
+    justify-content: center; } }
+
+@media screen and (min-width: 768px) {
+  .costs--center-sm .costs__row {
+    justify-content: flex-start; } }
+
+.costs--fc-white .costs__label,
+.costs--fc-white .costs__price,
+.costs--fc-white .costs__pv {
+  color: #FFFFFF; }
+
+.costs--fc-blue-dark .costs__label,
+.costs--fc-blue-dark .costs__price,
+.costs--fc-blue-dark .costs__pv {
+  color: #354657; }

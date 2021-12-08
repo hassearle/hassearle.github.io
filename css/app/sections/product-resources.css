@@ -1,0 +1,69 @@
+.product-resources {
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .product-resources {
+      margin-bottom: 80px; } }
+  .product-resources__wrap {
+    text-align: center;
+    padding: 45px 0 30px; }
+    @media screen and (min-width: 768px) {
+      .product-resources__wrap {
+        padding: 85px; } }
+  .product-resources__title {
+    font-size: 20px;
+    margin-bottom: 20px; }
+    @media screen and (min-width: 768px) {
+      .product-resources__title {
+        font-size: 30px;
+        line-height: 34px; } }
+  .product-resources__body {
+    line-height: 28px;
+    font-size: 20px;
+    padding-bottom: 43px; }
+    @media screen and (min-width: 768px) {
+      .product-resources__body p {
+        line-height: 28px;
+        font-size: 20px; } }
+    @media screen and (min-width: 768px) {
+      .product-resources__body {
+        max-width: 650px;
+        margin-left: auto;
+        margin-right: auto; } }
+  .product-resources__ctas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 15px; }
+    @media screen and (min-width: 768px) {
+      .product-resources__ctas {
+        flex-direction: row;
+        margin-bottom: 0; } }
+  .product-resources__cta-link {
+    font-size: 12px;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 17px; }
+    @media screen and (min-width: 768px) {
+      .product-resources__cta-link {
+        font-size: 16px;
+        margin-right: 20px;
+        margin-bottom: 0; } }
+    .product-resources__cta-link:last-child {
+      margin-right: 0; }
+    .product-resources__cta-link [class*="icon--"] {
+      margin-right: 8px; }
+  .product-resources__cta-link-icon {
+    position: relative; }
+  .product-resources__footer {
+    text-align: center;
+    padding: 25px;
+    font-size: 16px;
+    background-color: #f5f6f7; }
+    @media screen and (min-width: 768px) {
+      .product-resources__footer p {
+        max-width: 870px;
+        margin-left: auto;
+        margin-right: auto; } }

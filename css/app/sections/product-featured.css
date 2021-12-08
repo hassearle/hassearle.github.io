@@ -1,0 +1,201 @@
+@media screen and (min-width: 768px) {
+  .product-featured {
+    margin-top: 0; } }
+
+.product-featured__head {
+  background-color: #FFFFFF;
+  text-align: center; }
+
+.product-featured__head-title {
+  font-size: 20px;
+  line-height: 1.25;
+  padding-bottom: 23px; }
+  @media screen and (min-width: 768px) {
+    .product-featured__head-title {
+      font-size: 48px;
+      padding-bottom: 30px; } }
+
+.product-featured__body {
+  padding-top: 40px;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 768px) {
+    .product-featured__body {
+      padding-top: 70px;
+      padding-bottom: 70px; } }
+
+.product-featured__body-wrap {
+  display: flex;
+  flex-wrap: wrap; }
+  @media screen and (min-width: 768px) {
+    .product-featured__body-wrap {
+      flex-wrap: nowrap; } }
+
+.product-featured__details {
+  color: #FFFFFF;
+  display: flex;
+  min-width: 100%; }
+  @media screen and (min-width: 768px) {
+    .product-featured__details {
+      min-width: calc(50% - 10px); } }
+
+.product-featured__pic {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-left: 15px;
+  margin-right: 20px; }
+  @media screen and (min-width: 480px) {
+    .product-featured__pic {
+      margin-right: 30px; } }
+  @media screen and (min-width: 768px) {
+    .product-featured__pic {
+      margin-right: 60px; } }
+  .product-featured__pic img {
+    max-width: 120px;
+    max-height: 200px; }
+    @media screen and (max-width: 320px) {
+      .product-featured__pic img {
+        max-width: 100px; } }
+    @media screen and (min-width: 480px) {
+      .product-featured__pic img {
+        max-width: 130px; } }
+    @media screen and (min-width: 768px) {
+      .product-featured__pic img {
+        max-width: 160px; } }
+    @media screen and (min-width: 1024px) {
+      .product-featured__pic img {
+        max-width: 300px; } }
+  @media screen and (min-width: 768px) {
+    .product-featured__pic {
+      margin-left: 0;
+      margin-right: 30px;
+      align-items: center; }
+      .product-featured__pic img {
+        max-height: 270px; } }
+  @media screen and (min-width: 1024px) {
+    .product-featured__pic {
+      margin-right: 60px; } }
+  @media screen and (max-width: 320px) {
+    .product-featured__pic {
+      margin-right: 10px;
+      padding-left: 10px; } }
+
+.product-featured__info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  @media screen and (min-width: 768px) {
+    .product-featured__info {
+      justify-content: center;
+      align-self: flex-start;
+      padding-top: 30px; } }
+  .product-featured__info .product-featured__details {
+    padding-left: 0; }
+  .product-featured__info .loyalty-order__row--wholesale {
+    margin-bottom: 0; }
+
+.product-featured__title {
+  font-size: 20px;
+  line-height: 1.25; }
+  @media screen and (min-width: 768px) {
+    .product-featured__title {
+      font-size: 30px;
+      text-align: left; } }
+
+.product-featured__title-post {
+  display: block;
+  font-style: italic;
+  font-weight: 500; }
+
+.product-featured__details {
+  color: #FFFFFF;
+  min-width: 100%;
+  justify-content: center; }
+  @media screen and (min-width: 768px) {
+    .product-featured__details {
+      padding-left: 10%;
+      min-width: calc(50% - 10px);
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; } }
+
+.product-featured__actions {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .product-featured__actions {
+      display: block; } }
+  .product-featured__actions .loyalty-order__item-icons {
+    margin-left: 0; }
+
+.product-featured__order {
+  color: #FFFFFF;
+  min-width: 100%;
+  justify-content: flex-end; }
+  @media screen and (min-width: 768px) {
+    .product-featured__order {
+      min-width: calc(50% - 10px);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end; } }
+  @media screen and (min-width: 1024px) {
+    .product-featured__order {
+      padding-right: 10%; } }
+  .product-featured__order .loyalty-order__item-cta {
+    width: 100%; }
+    @media screen and (min-width: 1024px) {
+      .product-featured__order .loyalty-order__item-cta a.ui.button {
+        width: 100%; } }
+    .product-featured__order .loyalty-order__item-cta a.ui.button:hover {
+      background: #fff !important;
+      border-color: #fff !important;
+      color: #354657 !important; }
+  @media screen and (min-width: 768px) {
+    .product-featured__order .loyalty-order {
+      align-self: flex-start;
+      padding-top: 30px; } }
+  .product-featured__order .loyalty-order__row-ctas .product__add-bag {
+    margin-top: 10px; }
+  .product-featured__order .loyalty-order__row-item-data--w-icon .icon--help-circle {
+    top: 2px; }
+
+.product-featured__details .loyalty-order__item-icons {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .product-featured__details .loyalty-order__item-icons {
+      display: flex; } }
+
+.product-featured .loyalty-order .loyalty-order__row-group--rw {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .product-featured .loyalty-order .loyalty-order__row-group--rw {
+      display: block; } }
+
+.product-featured .loyalty-order .loyalty-order__item-icons {
+  display: flex; }
+
+.product-featured .product-bag__qty-label {
+  margin-right: 20px; }
+
+.product-featured .loyalty-order__item-icons {
+  justify-content: center; }
+
+.product-featured--dark .product__add-bag {
+  color: #354657 !important; }
+
+.product-featured--dark .product-featured__body-wrap .product-featured__order,
+.product-featured--dark .product-featured__body-wrap .product-featured__info,
+.product-featured--dark .product-featured__body-wrap .loyalty-order__row-item {
+  color: #354657 !important; }
+
+.product-featured--dark .icon--help-circle:before {
+  background-image: url("/images/icons/help-circle.svg"); }
+
+.product-featured--dark .icon--favorite:before {
+  background-image: url("/images/icons/favorite.svg"); }
+
+.product-featured--dark .icon--link:before {
+  background-image: url("/images/icons/link.svg"); }
+
+.product-featured--dark .icon--share:before {
+  background-image: url("/images/icons/share.svg"); }

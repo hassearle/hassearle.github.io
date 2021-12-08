@@ -1,0 +1,32 @@
+img {
+  max-width: 100%; }
+
+@media (min-width: 480px) and (max-width: 1023px) {
+  .header .container {
+    max-width: 100%; } }
+
+.ui.segment {
+  border-radius: 5px;
+  box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+  border: none; }
+
+main {
+  position: relative;
+  z-index: 400; }
+
+@media screen and (min-width: 1024px) {
+  .header .ui.grid.container,
+  main > .ui.grid.container,
+  #site-canvas > .ui.grid.container,
+  .my-bag__main-content > .ui.grid.container,
+  .guest-bag__main-content > .ui.grid.container,
+  .checkout__main-content > .ui.grid.container,
+  .checkout__content > .ui.grid.container,
+  .account__content > .ui.grid.container,
+  .spotlight > .ui.grid.container,
+  .hero--enroll-replicated .ui.grid.container,
+  .hero--upgrade-complete .ui.grid.container,
+  .hero--enroll-account-complete .ui.grid.container,
+  .footer .ui.grid.container {
+    padding-left: 5px !important;
+    padding-right: 5px !important; } }

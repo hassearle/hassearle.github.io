@@ -1,0 +1,17 @@
+.shape-circle {
+  width: 180px;
+  height: 180px;
+  background: #DE6C6C;
+  border-radius: 50%; }
+
+.shape-circle-border {
+  width: 180px;
+  height: 180px;
+  border: 5px solid #DE6C6C;
+  border-radius: 50%; }
+
+.shape-lemon {
+  width: 116px;
+  height: 180px;
+  background: #95C0F1;
+  border-radius: 50%; }

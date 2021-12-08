@@ -1,0 +1,26 @@
+.loyalty-promo-benefits {
+  background-color: #F5EEF7;
+  border-radius: 5px;
+  padding: 20px 10px;
+  position: relative;
+  z-index: 1000;
+  box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+  text-align: center !important; }
+  @media screen and (min-width: 768px) {
+    .loyalty-promo-benefits {
+      padding: 30px 15px; } }
+  .loyalty-promo-benefits__header {
+    margin: 0 auto;
+    max-width: 380px; }
+  .loyalty-promo-benefits__heading {
+    margin-top: 5px;
+    font-weight: 700; }
+  .loyalty-promo-benefits__intro {
+    font-size: 14px; }
+    @media screen and (min-width: 768px) {
+      .loyalty-promo-benefits__intro {
+        font-size: 16px; } }
+  .loyalty-promo-benefits__benefits {
+    margin: 20px 0 0; }
+  .loyalty-promo-benefits--h100 {
+    height: 100%; }

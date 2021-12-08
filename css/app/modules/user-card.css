@@ -1,0 +1,91 @@
+.user-card {
+  position: relative;
+  background-color: #F4F8FD;
+  border: 1px solid #95C0F1;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .user-card {
+      padding: 15px;
+      margin-bottom: 40px; } }
+  .user-card__actions {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
+    @media screen and (min-width: 768px) {
+      .user-card__actions {
+        top: 10px;
+        right: 10px; } }
+  .user-card__body {
+    display: flex; }
+  .user-card__avatar {
+    line-height: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (min-width: 768px) {
+      .user-card__avatar {
+        margin-right: 20px;
+        width: 70px;
+        height: 70px; } }
+    @media screen and (min-width: 768px) {
+      .user-card__avatar--smdt {
+        margin-right: 10px;
+        width: 40px;
+        height: 40px; } }
+  .user-card__details {
+    text-align: left;
+    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  .user-card__name {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 700;
+    margin-bottom: 2px; }
+    @media screen and (min-width: 1024px) {
+      .user-card__name {
+        font-size: 16px;
+        line-height: 24px; } }
+  .user-card__location {
+    font-size: 14px;
+    line-height: 22px;
+    margin-bottom: 5px; }
+    @media screen and (min-width: 1024px) {
+      .user-card__location {
+        font-size: 16px;
+        line-height: 24px; } }
+  .user-card__id {
+    display: flex;
+    font-size: 14px; }
+  .user-card__id-label {
+    padding-right: 3px; }
+  .user-card__telephone {
+    font-size: 14px; }
+  .user-card__mobile {
+    font-size: 14px; }
+  .user-card__email {
+    font-size: 14px;
+    text-decoration: none;
+    color: #354657; }
+  .user-card__row {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px; }
+  .user-card__row-status {
+    margin-right: 13px; }
+  .user-card__edit-link {
+    display: inline-block;
+    font-size: 14px; }
+  .user-card--status .user-card__body {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left; }

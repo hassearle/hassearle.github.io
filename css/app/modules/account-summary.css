@@ -1,0 +1,204 @@
+.account-summary {
+  padding: 15px 10px 40px 10px;
+  font-size: 16px;
+  margin-bottom: 30px; }
+  @media screen and (min-width: 768px) {
+    .account-summary {
+      padding: 30px;
+      margin-bottom: 50px; } }
+  @media screen and (min-width: 1024px) {
+    .account-summary {
+      margin-bottom: 70px; } }
+  .account-summary__heading {
+    margin-left: 15px;
+    margin-top: 15px !important;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .account-summary__heading {
+        margin-left: 0;
+        margin-top: 0 !important;
+        margin-bottom: 50px; } }
+  .ui.grid > .account-summary__column.wide.column {
+    border-bottom: 1px solid #EEEEEE; }
+    .ui.grid > .account-summary__column.wide.column:last-child {
+      border: none; }
+    @media (min-width: 1023px) and (max-width: 1199px) {
+      .ui.grid > .account-summary__column.wide.column:nth-child(2) {
+        border-right: none; } }
+    @media screen and (max-width: 767px) {
+      .ui.grid > .account-summary__column.wide.column {
+        padding-left: 10px !important;
+        padding-right: 10px !important; } }
+    @media screen and (min-width: 1024px) {
+      .ui.grid > .account-summary__column.wide.column {
+        border-bottom: none;
+        border-right: 2px solid #EEEEEE;
+        margin-bottom: 25px; } }
+  .account-summary__header {
+    position: relative;
+    padding-top: 15px;
+    margin-bottom: 25px; }
+    .account-summary__header--enroller {
+      margin-bottom: 30px !important; }
+    .account-summary__header--sponsor {
+      margin: 30px 0 !important; }
+    @media screen and (min-width: 768px) {
+      .account-summary__header {
+        padding-top: 0; } }
+  .account-summary__edit-action {
+    position: absolute;
+    top: 10px;
+    right: 0; }
+    @media screen and (min-width: 768px) {
+      .account-summary__edit-action {
+        top: 0; } }
+  .account-summary__subheading {
+    font-weight: 700; }
+  .account-summary__label {
+    font-weight: 700;
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 22px; }
+    @media screen and (min-width: 1024px) {
+      .account-summary__label {
+        font-size: 16px;
+        line-height: 24px; } }
+  .account-summary__value {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px; }
+    @media screen and (min-width: 1024px) {
+      .account-summary__value {
+        font-size: 16px;
+        line-height: 24px; } }
+  .account-summary__checkbox .form-check-label {
+    font-size: 12px !important;
+    font-style: italic;
+    color: #A25EB5; }
+  .account-summary__card {
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px; }
+    @media screen and (min-width: 1024px) {
+      .account-summary__card {
+        font-size: 16px;
+        line-height: 24px; } }
+  .account-summary__card-heading {
+    font-weight: 700;
+    display: block;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center; }
+  .account-summary__card-icon {
+    margin-right: 10px; }
+  .account-summary__checks {
+    background: #354657;
+    padding: 30px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.1);
+    overflow: hidden; }
+    .account-summary__checks .form-check-label {
+      font-size: 14px;
+      font-weight: 500;
+      line-height: 1.43; }
+    .account-summary__checks .form-check {
+      margin-bottom: 20px; }
+      .account-summary__checks .form-check:last-child {
+        margin-bottom: 0; }
+  .account-summary__footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (max-width: 767px) {
+      .account-summary__footer {
+        margin-top: 25px; } }
+  .account-summary__row {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-bottom: 10px; }
+    .account-summary__row--mtl {
+      margin-top: 30px; }
+      @media screen and (min-width: 768px) {
+        .account-summary__row--mtl {
+          margin-top: 50px; } }
+    .account-summary__row--block {
+      display: block;
+      font-size: 14px;
+      line-height: 22px; }
+      @media screen and (min-width: 1024px) {
+        .account-summary__row--block {
+          font-size: 16px;
+          line-height: 24px; } }
+  .account-summary__row-key {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px; }
+    @media screen and (min-width: 1024px) {
+      .account-summary__row-key {
+        font-size: 16px;
+        line-height: 24px; } }
+  .account-summary__row-value {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px; }
+    @media screen and (min-width: 1024px) {
+      .account-summary__row-value {
+        font-size: 16px;
+        line-height: 24px; } }
+  .account-summary--flush {
+    padding-left: 0;
+    padding-right: 0; }
+  .account-summary--vertical {
+    padding: 0; }
+    .account-summary--vertical .account-summary__heading {
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 24px;
+      margin-left: 0;
+      margin-top: 0 !important; }
+      @media screen and (min-width: 1024px) {
+        .account-summary--vertical .account-summary__heading {
+          font-size: 30px;
+          line-height: 38px; } }
+    .account-summary--vertical .account-summary__group {
+      font-size: 14px;
+      line-height: 22px;
+      margin-top: 32px; }
+      @media screen and (min-width: 1024px) {
+        .account-summary--vertical .account-summary__group {
+          font-size: 16px;
+          line-height: 24px; } }
+      .account-summary--vertical .account-summary__group:first-of-type {
+        margin-top: 0; }
+    .account-summary--vertical .account-summary__header {
+      padding-top: 0;
+      margin-bottom: 16px; }
+      @media screen and (min-width: 1024px) {
+        .account-summary--vertical .account-summary__header {
+          margin-bottom: 20px; } }
+    .account-summary--vertical .account-summary__subheading {
+      font-size: 16px;
+      line-height: 24px;
+      margin: 0; }
+      @media screen and (min-width: 1024px) {
+        .account-summary--vertical .account-summary__subheading {
+          font-size: 20px;
+          line-height: 28px; } }
+    .account-summary--vertical .account-summary__grid {
+      flex-direction: column; }
+    .account-summary--vertical .account-summary__edit-action {
+      opacity: .5;
+      top: 0; }
+      .account-summary--vertical .account-summary__edit-action [class*="icon--"], .account-summary--vertical .account-summary__edit-action [class*="icon--"]::before {
+        width: 24px;
+        height: 24px; }
+        @media screen and (min-width: 1024px) {
+          .account-summary--vertical .account-summary__edit-action [class*="icon--"], .account-summary--vertical .account-summary__edit-action [class*="icon--"]::before {
+            width: 28px;
+            height: 28px; } }
+    .account-summary--vertical .account-summary__notification {
+      margin-bottom: 8px; }

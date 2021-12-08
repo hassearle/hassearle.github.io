@@ -1,0 +1,85 @@
+.account-orders__search {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  width: auto !important;
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #EEEEEE; }
+  @media screen and (min-width: 768px) {
+    .account-orders__search {
+      margin-bottom: 0;
+      padding-bottom: 0;
+      border-bottom: 0; } }
+  .account-orders__search-label {
+    font-weight: 700;
+    margin-right: 10px; }
+  .account-orders__search-value {
+    max-width: 195px !important; }
+
+.account-orders__date-filter {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 25px; }
+  @media (min-width: 480px) and (max-width: 992px) {
+    .account-orders__date-filter {
+      float: left !important; } }
+  @media screen and (min-width: 768px) {
+    .account-orders__date-filter {
+      display: inline-flex;
+      flex-direction: row;
+      float: right;
+      align-items: center;
+      margin-bottom: 15px;
+      margin-left: 0;
+      margin-right: 0;
+      margin-top: 0; } }
+  .account-orders__date-filter-label {
+    width: 100%;
+    margin-bottom: 10px; }
+    @media screen and (min-width: 768px) {
+      .account-orders__date-filter-label {
+        width: auto;
+        margin-bottom: 0;
+        margin-right: 15px; } }
+  .account-orders__date-filter-dates {
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .account-orders__date-filter-dates {
+        width: auto; } }
+  .account-orders__date-filter-separator {
+    display: none; }
+    @media screen and (min-width: 480px) {
+      .account-orders__date-filter-separator {
+        display: inline; } }
+  .account-orders__date-filter-value {
+    width: 100%; }
+    @media screen and (min-width: 480px) {
+      .account-orders__date-filter-value {
+        width: 170px; } }
+    .account-orders__date-filter-value:first-child {
+      margin-bottom: 15px; }
+      @media screen and (min-width: 480px) {
+        .account-orders__date-filter-value:first-child {
+          margin-left: 0;
+          margin-right: 10px;
+          margin-bottom: 0; } }
+    @media screen and (min-width: 480px) {
+      .account-orders__date-filter-value:last-child {
+        margin-right: 0;
+        margin-left: 10px; } }
+    @media screen and (min-width: 768px) {
+      .account-orders__date-filter-value {
+        margin: 0 10px; } }
+    @media screen and (min-width: 480px) {
+      .account-orders__date-filter-value input.js-datepicker-ui {
+        font-size: 14px !important; } }
+  .account-orders__date-filter .icon--calendar {
+    top: 6px;
+    left: -34px; }
+
+.account-orders__pagination {
+  margin: 50px 0 0; }
+  @media screen and (min-width: 768px) {
+    .account-orders__pagination {
+      margin: 50px 0 20px; } }

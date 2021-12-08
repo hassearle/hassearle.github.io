@@ -1,0 +1,62 @@
+.my-bag__header {
+  background-color: #F4F8FD;
+  padding-bottom: 70px;
+  margin-bottom: 30px;
+  padding-bottom: 30px; }
+  @media screen and (min-width: 480px) {
+    .my-bag__header {
+      padding-top: 1rem; } }
+  .my-bag__header-content {
+    display: flex;
+    flex-direction: column-reverse; }
+
+@media screen and (max-width: 480px) {
+  .my-bag__header-content {
+    margin-left: -1rem;
+    margin-right: -1rem; } }
+
+.my-bag__title {
+  padding-bottom: 20px; }
+  @media screen and (min-width: 768px) {
+    .my-bag__title {
+      padding-top: 30px;
+      padding-bottom: 40px; } }
+
+.my-bag__intro {
+  text-align: center; }
+  .my-bag__intro, .my-bag__intro p {
+    font-size: 20px; }
+
+.my-bag__main-content {
+  margin-top: -70px;
+  margin-bottom: 30px; }
+  @media screen and (min-width: 768px) {
+    .my-bag__main-content--active .panel.bag {
+      min-height: 750px; } }
+  @media screen and (min-width: 768px) {
+    .my-bag__main-content--active .scroller {
+      height: 580px;
+      margin-top: 30px; } }
+
+.my-bag__rewards {
+  margin-bottom: 30px;
+  padding-top: 15px;
+  position: relative; }
+  @media screen and (min-width: 768px) {
+    .my-bag__rewards {
+      padding-bottom: 20px; } }
+  @media screen and (min-width: 1024px) {
+    .my-bag__rewards {
+      padding-right: 20px; } }
+
+.my-bag__alert {
+  padding: 10px 15px 15px; }
+  @media screen and (min-width: 768px) {
+    .my-bag__alert {
+      padding: 20px 20px 5px 20px; } }
+  @media screen and (min-width: 1024px) {
+    .my-bag__alert {
+      padding: 25px 10px 10px 30px; } }
+
+.my-bag__wishlist {
+  margin-top: 30px; }

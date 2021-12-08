@@ -1,0 +1,948 @@
+.product-bag {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  border-radius: 5px;
+  position: relative;
+  margin-top: 7px; }
+  @media screen and (min-width: 480px) {
+    .product-bag {
+      padding: 0; } }
+  .product-bag__wrap {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 12px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__wrap {
+        margin-bottom: 0;
+        margin-top: 0; } }
+  .product-bag__qty-label {
+    display: flex;
+    align-items: center;
+    font-size: 16px; }
+  .product-bag__ribbon {
+    left: 10px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__ribbon {
+        left: 0; } }
+  .product-bag__image {
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 45px;
+    margin-bottom: 20px;
+    margin-left: 10px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__image {
+        width: 135px;
+        height: 135px;
+        margin-top: 38px;
+        margin-left: 0; } }
+    .product-bag__image img {
+      max-height: 100%;
+      max-width: 100%; }
+  .product-bag__content {
+    display: flex;
+    flex-direction: column;
+    padding: 20px 10px;
+    width: 100%;
+    width: calc(100% - 100px); }
+    @media screen and (min-width: 768px) {
+      .product-bag__content {
+        width: calc(100% - 135px);
+        padding: 20px; } }
+  .product-bag__body {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap; }
+  .product-bag__footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 25px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__footer {
+        justify-content: flex-end;
+        height: 0;
+        margin-top: -20px;
+        padding-right: 8px; } }
+  .product-bag__remove {
+    padding: 0;
+    border: none;
+    outline: none;
+    background: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    line-height: 0;
+    background-color: #FBF0F0;
+    border-radius: 50%; }
+  .product-bag .product__badge {
+    right: 37px; }
+  .product-bag__title {
+    font-size: 14px;
+    font-weight: 500;
+    color: #354657;
+    overflow-wrap: break-word;
+    width: 100%;
+    margin-top: 23px;
+    margin-bottom: 4px !important;
+    display: block;
+    display: -webkit-box;
+    height: 44px;
+    line-height: 22px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    display: box;
+    /* As specified */
+    display: -moz-box;
+    /* Mozilla */
+    display: -webkit-box;
+    /* WebKit */
+    /* Children should be oriented vertically */
+    box-orient: vertical;
+    /* As specified */
+    -moz-box-orient: vertical;
+    /* Mozilla */
+    -webkit-box-orient: vertical;
+    /* WebKit */
+    /* Pack children to the top of this box */
+    box-pack: center;
+    /* As specified */
+    -moz-box-pack: center;
+    /* Mozilla */
+    -webkit-box-pack: center;
+    /* WebKit */ }
+    @media screen and (min-width: 768px) {
+      .product-bag__title {
+        height: 48px;
+        line-height: 24px; } }
+    @media screen and (min-width: 768px) {
+      .product-bag__title {
+        font-size: 16px;
+        margin-top: 15px; } }
+  .product-bag__total {
+    font-size: 13px;
+    color: #354657;
+    font-weight: 800; }
+    @media screen and (min-width: 480px) {
+      .product-bag__total {
+        font-size: 16px; } }
+  .product-bag__prices {
+    font-size: 14px;
+    color: #354657;
+    display: flex;
+    flex-direction: column; }
+    @media screen and (min-width: 1440px) {
+      .product-bag__prices {
+        flex-direction: row; } }
+  .product-bag__pv {
+    color: #A25EB5;
+    font-size: 14px;
+    margin-bottom: 10px;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .product-bag__pv {
+        font-size: 16px;
+        line-height: 24px; } }
+  .product-bag__row {
+    display: flex; }
+  .product-bag__foot {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 10px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__foot {
+        flex-direction: row;
+        margin-top: 20px; } }
+  .product-bag__promotion {
+    color: #A25EB5;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .product-bag__promotion {
+        flex-direction: row; } }
+    .product-bag__promotion > span {
+      margin-right: 10px;
+      display: flex;
+      align-items: center; }
+    .product-bag__promotion-icon {
+      min-width: 24px;
+      min-height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: -3px 0 -2px; }
+  .product-bag__promotion-badge {
+    background: transparent;
+    color: #BD8BCA;
+    font-size: 12px;
+    font-weight: 700;
+    padding: 2px 10px 2px 1px;
+    border-radius: 3px;
+    display: inline-flex;
+    align-items: center;
+    align-self: flex-start;
+    letter-spacing: normal;
+    border: 1px solid #BD8BCA; }
+    @media screen and (max-width: 767px) {
+      .product-bag__promotion-badge {
+        order: 1; } }
+    @media screen and (min-width: 1024px) {
+      .product-bag__promotion-badge {
+        align-self: flex-end; } }
+    .product-bag__promotion-badge--savings {
+      background: #F5EEF7;
+      color: #A25EB5;
+      padding: 1px 10px 0 10px; }
+  .product-bag__quantity-field.quantity-field {
+    width: 220px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__quantity-field.quantity-field {
+        width: 150px;
+        margin-top: -20px;
+        margin-left: auto; } }
+  .product-bag .quantity-field {
+    width: 200px; }
+    @media screen and (min-width: 768px) {
+      .product-bag .quantity-field {
+        width: 150px;
+        order: 2; } }
+  .product-bag__quantity-field-alert {
+    position: absolute;
+    background: #354657;
+    top: 20px;
+    bottom: 20px;
+    right: 15px;
+    width: 150px;
+    border-radius: 5px;
+    box-shadow: 0 2px 15px 0 rgba(51, 51, 51, 0.2);
+    color: #FFFFFF;
+    text-align: center; }
+    .product-bag__quantity-field-alert [class*="icon--"] {
+      margin-top: 12px; }
+  .product-bag__quantity-field-alert-msg {
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.29;
+    display: block;
+    margin: -8px 10px 20px 10px; }
+  .product-bag__quantity {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0 0;
+    padding: 0;
+    justify-content: flex-end;
+    margin-left: auto; }
+    .product-bag__quantity dd {
+      margin-left: 5px; }
+    .product-bag__quantity--block {
+      background: #FFFFFF;
+      margin: 0;
+      display: flex;
+      align-content: center;
+      justify-content: center;
+      padding-left: 20px;
+      padding-right: 20px;
+      min-height: 50px;
+      border: 2px solid #D1D1D1;
+      border-radius: 5px;
+      width: 220px; }
+      @media screen and (min-width: 768px) {
+        .product-bag__quantity--block {
+          width: 150px; } }
+      .product-bag__quantity--block > * {
+        display: flex;
+        align-items: center; }
+      .product-bag__quantity--block dt {
+        font-weight: 500; }
+      @media screen and (min-width: 768px) {
+        .product-bag__quantity--block {
+          margin-top: -20px;
+          margin-left: auto; } }
+  .product-bag__customize {
+    display: flex;
+    font-weight: 700;
+    font-size: 16px;
+    margin: 0 0 0 0;
+    padding: 0; }
+    @media screen and (min-width: 768px) {
+      .product-bag__customize {
+        justify-content: flex-end;
+        margin-left: auto; } }
+    .product-bag__customize a.order-summary__button.button {
+      margin-bottom: 0 !important; }
+    @media (max-width: 479px) {
+      .product-bag__customize {
+        margin-top: 10px; } }
+  .product-bag__points-used {
+    letter-spacing: normal;
+    color: #5597E2;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 500;
+    width: 100%; }
+    @media screen and (max-width: 767px) {
+      .product-bag__points-used {
+        order: 4; } }
+    @media screen and (min-width: 768px) {
+      .product-bag__points-used {
+        font-size: 16px; } }
+  .product-bag__points {
+    display: none;
+    margin-top: 10px; }
+  .product-bag__points-inner {
+    background-color: #F4F8FD;
+    color: #354657;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 15px 8px;
+    position: relative;
+    flex-wrap: wrap;
+    flex-direction: column; }
+    @media screen and (min-width: 768px) {
+      .product-bag__points-inner {
+        padding: 8px 8px 8px 24px; } }
+    @media screen and (min-width: 768px) {
+      .product-bag__points-inner {
+        border-top: 1px solid #0067DC;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; } }
+    .product-bag__points-inner::before {
+      position: absolute;
+      bottom: 100%;
+      left: calc(50% - 12px);
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 8px solid #0067DC; }
+      @media screen and (min-width: 768px) {
+        .product-bag__points-inner::before {
+          left: calc(100% - 96px); } }
+  .product-bag__points-content {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
+    order: 4; }
+    @media screen and (min-width: 768px) {
+      .product-bag__points-content {
+        order: 1; } }
+  .product-bag__points-title {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: initial;
+    border: 1px solid #84909B;
+    border-radius: 5px;
+    padding: 3px 10px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__points-title {
+        width: auto; } }
+    @media screen and (min-width: 1024px) {
+      .product-bag__points-title {
+        font-size: 16px;
+        line-height: 24px; } }
+    .product-bag__points-title--mobile {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-bottom: 8px;
+      max-width: 200px;
+      min-height: 24px; }
+      @media screen and (min-width: 768px) {
+        .product-bag__points-title--mobile {
+          display: none; } }
+    @media screen and (max-width: 767px) {
+      .product-bag__points-title--desktop {
+        display: none; } }
+  .product-bag__points-error {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 700;
+    color: #354657;
+    display: flex;
+    align-items: center; }
+    @media screen and (min-width: 1024px) {
+      .product-bag__points-error {
+        width: 50%; } }
+  .product-bag__points-note {
+    margin: 0;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    display: block;
+    margin-top: 8px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__points-note {
+        margin-top: 0;
+        text-align: right;
+        padding-right: 24px; } }
+    @media screen and (min-width: 1024px) {
+      .product-bag__points-note {
+        font-size: 16px;
+        line-height: 22px; } }
+  .product-bag__qty {
+    border: 2px solid #D1D1D1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    background: #FFFFFF;
+    min-height: 50px;
+    font-weight: 500;
+    margin: 0;
+    width: 100%;
+    max-width: 220px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__qty {
+        max-width: 150px;
+        margin-left: auto; } }
+    .product-bag__qty > * {
+      margin: 0;
+      padding: 0 2px; }
+    .product-bag__qty dd {
+      font-weight: 700; }
+  .product-bag.inactive {
+    opacity: 0.5; }
+  .product-bag.active {
+    opacity: 1; }
+  .product-bag__volume {
+    font-size: 12px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    letter-spacing: normal;
+    color: #354657;
+    width: 100%;
+    margin-bottom: 5px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__volume {
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 8px; } }
+  .product-bag__price-cost {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    color: #354657;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .product-bag__price-cost {
+        font-size: 16px; } }
+    .product-bag__price-cost--lt {
+      text-decoration: line-through; }
+  .product-bag__count {
+    display: none;
+    position: absolute;
+    z-index: 99;
+    top: 3px;
+    right: 6px;
+    font-size: 12px;
+    font-weight: 700; }
+  .product-bag__cost-row {
+    display: flex;
+    width: 100%;
+    color: #84909B;
+    font-size: 12px;
+    line-height: 20px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__cost-row {
+        font-size: 16px;
+        line-height: 24px; } }
+    .product-bag__cost-row--retail .product__cost-row-info {
+      text-decoration: line-through; }
+    .product-bag__cost-row--wholesale {
+      font-weight: 700; }
+    .product-bag__cost-row--pv-points {
+      justify-content: center;
+      color: #A25EB5; }
+    .product-bag__cost-row--promo {
+      font-weight: 700; }
+    .product-bag__cost-row--lead {
+      font-size: 16px;
+      font-weight: 700;
+      color: #354657; }
+      @media screen and (min-width: 768px) {
+        .product-bag__cost-row--lead {
+          font-size: 20px;
+          line-height: 28px; } }
+    .product-bag__cost-row--support {
+      color: #84909B;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 20px; }
+      @media screen and (min-width: 768px) {
+        .product-bag__cost-row--support {
+          font-size: 16px;
+          line-height: 24px; } }
+  .product-bag__cost-row-label {
+    padding-right: 4px;
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    hyphens: auto; }
+  .product-bag__cost-row-info--lined {
+    text-decoration: line-through; }
+  .order-details__products--grid .product-bag {
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.15);
+    height: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(33.33% - 20px); }
+    @media screen and (min-width: 480px) {
+      .order-details__products--grid .product-bag {
+        width: 80px; } }
+    @media screen and (max-width: 767px) {
+      .order-details__products--grid .product-bag:not(:nth-of-type(-n + 2)):not(.product-bag--data) {
+        display: none; } }
+    .order-details__products--grid .product-bag .product-bag__renewal-title--list {
+      display: none; }
+    .order-details__products--grid .product-bag .product-bag__renewal-title--grid {
+      display: flex; }
+    .order-details__products--grid .product-bag .product-bag__image {
+      width: auto;
+      max-height: 80px;
+      margin: 0 auto;
+      padding: 0;
+      min-width: 0; }
+    .order-details__products--grid .product-bag .product-bag__content {
+      display: none; }
+    .order-details__products--grid .product-bag .product-bag__image img {
+      max-width: 64px; }
+    .order-details__products--grid .product-bag .product-bag__ribbon.ribbon.ribbon--land {
+      transform: rotate(90deg);
+      left: 22px;
+      top: 0px; }
+    .order-details__products--grid .product-bag .product-bag {
+      background-color: #FFFFFF !important; }
+    @media screen and (max-width: 767px) {
+      .order-details__products--grid .product-bag.product-bag--checkout .product-bag__inner {
+        width: 100%; }
+      .order-details__products--grid .product-bag.product-bag--checkout .product-bag__ribbon.ribbon {
+        left: 20px; } }
+    .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px 0; }
+      .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-avatar {
+        width: 45px;
+        height: 45px; }
+        @media screen and (max-width: 767px) {
+          .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-avatar {
+            margin-bottom: 4px;
+            margin-top: 5px; } }
+        .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-avatar .product-bag__renewal-icon {
+          font-size: 25px; }
+      .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details {
+        width: auto;
+        text-align: center;
+        margin-top: 5px; }
+        @media screen and (max-width: 767px) {
+          .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details {
+            padding-top: 0;
+            margin-top: 0;
+            padding-left: 0; } }
+        .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-title {
+          font-size: 10px;
+          line-height: 11px;
+          margin-right: 0;
+          padding-left: 5px;
+          padding-right: 5px;
+          margin-bottom: 0; }
+        .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-intro-wrap {
+          display: none; }
+        .order-details__products--grid .product-bag.product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-help {
+          display: none; }
+  .product-bag--data {
+    position: relative;
+    transition: 0.1s all ease-in-out; }
+    @media screen and (min-width: 768px) {
+      .product-bag--data {
+        display: none !important; } }
+    .product-bag--data:last-child {
+      margin-right: 0; }
+    .product-bag--data img {
+      max-height: 80px; }
+    .product-bag--data .product-bag__overlay {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: rgba(255, 255, 255, 0.85);
+      z-index: 10; }
+    .product-bag--data .product-bag__data {
+      position: absolute;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      z-index: 11;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      font-weight: 700;
+      color: #354657; }
+  .product-bag--checkout {
+    border-bottom: 1px solid #EEEEEE; }
+    .product-bag--checkout .product__badge {
+      right: 20px; }
+  .product-bag--collapsible {
+    border-bottom: 0 !important;
+    margin-top: 0; }
+    @media screen and (max-width: 1023px) {
+      .product-bag--collapsible .product-bag__ribbon,
+      .product-bag--collapsible .product-bag__content,
+      .product-bag--collapsible .product-bag__footer {
+        display: none; }
+      .product-bag--collapsible .product-bag__image {
+        padding: 8px;
+        margin: 0 auto;
+        height: 100px; }
+        .product-bag--collapsible .product-bag__image img {
+          height: 100%;
+          width: auto;
+          max-width: 100%; } }
+  .product-bag--plain {
+    border-bottom: 0; }
+  .product-bag__promo-message {
+    position: relative;
+    display: none;
+    background: #EEEEEE;
+    color: #354657;
+    margin: 0 0 15px 0;
+    padding: 5px;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    min-height: 88px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 5px 5px;
+    width: 100%; }
+    @media screen and (min-width: 768px) {
+      .product-bag__promo-message {
+        border-top: 1px solid #D1D1D1;
+        min-height: 66px; } }
+    @media screen and (min-width: 1024px) {
+      .product-bag__promo-message {
+        font-size: 16px;
+        line-height: 24px;
+        justify-content: flex-start;
+        text-align: left;
+        padding-left: 20px; } }
+    .product-bag__promo-message::before {
+      position: absolute;
+      bottom: 100%;
+      left: calc(50% - 12px);
+      content: "";
+      width: 0;
+      height: 0;
+      border-left: 12px solid transparent;
+      border-right: 12px solid transparent;
+      border-bottom: 8px solid #EEEEEE; }
+      @media screen and (min-width: 768px) {
+        .product-bag__promo-message::before {
+          left: calc(100% - 94px);
+          border-bottom: 10px solid #D1D1D1; } }
+  .bag__items--points-active .product-bag__promo-message {
+    display: flex; }
+  .product-bag--pack {
+    background: #F4F8FD;
+    background: #faf7fb; }
+  .product-bag--pack-child {
+    margin-top: 0; }
+    @media screen and (min-width: 768px) {
+      .product-bag--pack-child {
+        padding-left: 50px;
+        padding-right: 50px; } }
+  .product-bag--lrp .product-bag__content {
+    align-items: flex-end;
+    padding-bottom: 10px; }
+  .product-bag--lrp .product-bag__image {
+    height: 95px;
+    padding: 15px;
+    width: auto; }
+  .product-bag--lrp .product-bag__body {
+    flex: 1;
+    padding: 5px; }
+  .product-bag--lrp .product-bag__foot {
+    flex: 0; }
+  .product-bag--lrp .product-bag__title {
+    margin-bottom: 2px; }
+  .product-bag--lrp .product-bag__size {
+    font-size: 12px;
+    color: #84909B; }
+  .product-bag--lrp .product-bag__cost {
+    display: flex;
+    margin-top: 5px; }
+  .product-bag--lrp .product-bag__cost-row-info {
+    padding-left: 0;
+    padding-right: 15px;
+    font-weight: 500; }
+  .product-bag--lrp .product-bag__qty {
+    font-size: 14px;
+    width: 60px;
+    line-height: 15px; }
+    @media screen and (min-width: 768px) {
+      .product-bag--lrp .product-bag__qty {
+        width: 90px; } }
+    .product-bag--lrp .product-bag__qty > dd {
+      font-weight: 500; }
+  .product-bag--membership-renewal {
+    background: #F4F8FD;
+    margin-bottom: 20px;
+    margin-top: 0;
+    position: relative; }
+  .product-bag__renewal-header {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-header {
+        flex-wrap: nowrap; } }
+  .product-bag__renewal-avatar {
+    background: #BD8BCA;
+    border-radius: 100%;
+    width: 105px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto 10px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-avatar {
+        margin: 0 10px; } }
+  .product-bag__renewal-icon {
+    font-size: 60px; }
+  .product-bag__renewal-details {
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 20px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-details {
+        text-align: left;
+        width: calc(100% - 150px);
+        padding-top: 0; } }
+  .product-bag__renewal-title {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: bold;
+    margin-bottom: 5px; }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-title {
+        font-size: 20px;
+        line-height: 28px; } }
+    .product-bag__renewal-title--grid {
+      display: none; }
+  .product-bag__renewal-intro-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+  .product-bag__renewal-intro {
+    font-weight: 500;
+    width: 90%;
+    margin: 10px auto 20px;
+    color: #84909B; }
+    .product-bag__renewal-intro > p {
+      font-size: 12px;
+      line-height: 16px; }
+      @media screen and (min-width: 768px) {
+        .product-bag__renewal-intro > p {
+          font-size: 14px;
+          line-height: 22px; } }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-intro {
+        margin: 0;
+        width: calc(100% - 160px);
+        max-width: 370px; } }
+  .product-bag__renewal-costs {
+    font-size: 14px;
+    line-height: 22px;
+    font-weight: 500;
+    width: calc(100% - 160px);
+    display: flex;
+    align-items: center; }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-costs {
+        font-size: 16px; } }
+  .product-bag__renewal-qty .product__qty {
+    margin-right: 0;
+    margin-top: 0;
+    margin-bottom: 0; }
+  .product-bag__renewal-help {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    cursor: pointer; }
+  .product-bag__renewal-body {
+    border-top: 2px solid #EEEEEE;
+    margin: 0 20px;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap; }
+    @media screen and (min-width: 480px) {
+      .product-bag__renewal-body {
+        flex-wrap: nowrap; } }
+  .product-bag__renewal-body-item {
+    padding: 15px;
+    text-align: center; }
+    @media screen and (min-width: 768px) {
+      .product-bag__renewal-body-item {
+        padding: 20px;
+        max-width: 180px; } }
+    @media screen and (min-width: 1024px) {
+      .product-bag__renewal-body-item {
+        padding: 25px; } }
+  .product-bag__renewal-body-item-title {
+    font-size: 16px;
+    line-height: normal;
+    font-weight: 500; }
+  .product-bag__renewal-body-item-icon {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 20px; }
+  .product-bag--membership-renewal-mini-cart {
+    margin-bottom: 0; }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-header {
+      padding: 15px 10px;
+      align-items: center; }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-avatar {
+      width: 60px;
+      height: 60px;
+      margin: 0 0 0 0; }
+      @media screen and (min-width: 768px) {
+        .product-bag--membership-renewal-mini-cart .product-bag__renewal-avatar {
+          margin: 0 0 0 10px; } }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-icon {
+      font-size: 30px; }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-details {
+      width: calc(100% - 85px);
+      padding-top: 0; }
+      @media screen and (min-width: 768px) {
+        .product-bag--membership-renewal-mini-cart .product-bag__renewal-details {
+          width: calc(100% - 95px); } }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-title {
+      font-size: 14px;
+      text-align: left;
+      padding-right: 15px;
+      font-weight: 500; }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-help {
+      right: 5px;
+      top: 5px; }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-costs {
+      font-weight: 700;
+      margin-right: 10px;
+      font-size: 20px;
+      line-height: 26px; }
+    .product-bag--membership-renewal-mini-cart .product-bag__renewal-qty {
+      margin-top: 5px;
+      margin-bottom: 5px; }
+    .product-bag--membership-renewal-mini-cart .product-bag__qty {
+      font-size: 14px;
+      min-height: 0; }
+  .product-bag--checkout-renewal {
+    margin-bottom: 0; }
+    .product-bag--checkout-renewal .product-bag__renewal-title {
+      margin-right: 35px; }
+    @media screen and (max-width: 767px) {
+      .product-bag--checkout-renewal .product-bag__renewal-header {
+        flex-wrap: nowrap;
+        padding-top: 0;
+        padding-bottom: 10px;
+        padding-right: 10px; }
+        .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-avatar {
+          width: 60px;
+          height: 60px; }
+          .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-avatar .product-bag__renewal-icon {
+            font-size: 32px; }
+        .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details {
+          text-align: left;
+          padding-left: 20px; }
+          .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-intro {
+            width: 100%;
+            margin-bottom: 0; }
+            .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-intro p {
+              max-width: 140px; }
+          .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-qty {
+            width: auto; }
+          .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-help {
+            display: none; } }
+      @media screen and (max-width: 767px) and (min-width: 768px) {
+        .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-details .product-bag__renewal-help {
+          display: block; } }
+    @media (min-width: 480px) and (max-width: 767px) {
+      .product-bag--checkout-renewal .product-bag__renewal-header .product-bag__renewal-avatar {
+        margin-left: 10px; }
+      .product-bag--checkout-renewal .product-bag__renewal-header
+.product-bag__renewal-details
+.product-bag__renewal-intro
+p {
+        max-width: 80%; } }
+  .product-bag--membership-product .ribbon {
+    display: none; }
+  @media screen and (max-width: 1023px) {
+    .product-bag--stacked-md .product-bag__body {
+      flex-wrap: wrap !important; } }
+  @media screen and (max-width: 1023px) {
+    .product-bag--stacked-md .product-bag__footer {
+      margin-top: 0;
+      height: auto;
+      padding-right: 0; } }
+  @media screen and (max-width: 1023px) {
+    .product-bag--stacked-md .product-bag__quantity-field.quantity-field {
+      margin-top: 0;
+      margin-right: auto;
+      margin-left: auto;
+      width: 100%;
+      max-width: 215px; } }
+  .product-bag--stacked-md .product-bag__qty {
+    border: 2px solid green; }
+
+.order-details__products--grid .product-bag--membership-product .ribbon {
+  display: flex; }

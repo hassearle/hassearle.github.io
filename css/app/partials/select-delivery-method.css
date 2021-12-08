@@ -1,0 +1,13 @@
+.delivery_method_add_address {
+  display: none; }
+
+.delivery_method_edit_address {
+  display: none;
+  padding-bottom: 30px; }
+
+.add-address-pre-save {
+  display: none;
+  padding-bottom: 30px; }
+
+.save-to-address-book--options {
+  display: none; }
