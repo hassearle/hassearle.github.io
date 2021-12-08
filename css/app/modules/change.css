@@ -1,8 +1,0 @@
-.change {
-  display: flex;
-  align-items: center; }
-  .change__icon {
-    margin: 0 5px; }
-    @media screen and (min-width: 768px) {
-      .change__icon {
-        margin: 0 10px; } }
